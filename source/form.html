@@ -44,20 +44,20 @@
         </section>
         <section class="contest">
           <p class="contest__slogan">Поделитесь своей историей и получите шанс выиграть ценный приз — 1000 миль на вашу бонусную карту! Пожалуйста, заполните форму ниже:</p>
-          <form class="contest__form" name="contest__form" method="post" action="https://echo.htmlacademy.ru">
+          <form class="contest__form" method="post" action="https://echo.htmlacademy.ru">
             <div class="contest__surname">
               <fieldset class="contest__fields">
                 <div class="contest__field field">
-                  <label class="contest__label" for="surname">Фамилия:</label>
-                  <input class="contest__input" type="text" id="surname" name="surname" required placeholder="Укажите фамилию *">
+                  <label class="field__label" for="surname">Фамилия:</label>
+                  <input class="field__input" type="text" id="surname" name="surname" required placeholder="Укажите фамилию *">
                 </div>
                 <div class="contest__field field">
-                  <label class="contest__label" for="name">Имя:</label>
-                  <input class="contest__input" type="text" id="name" name="name" required placeholder="Введите ваше имя *">
+                  <label class="field__label" for="name">Имя:</label>
+                  <input class="field__input" type="text" id="name" name="name" required placeholder="Введите ваше имя *">
                 </div>
                 <div class="contest__field field">
-                  <label class="contest__label" for="patronymic">Отчество:</label>
-                  <input class="contest__input" type="text" id="patronymic" name="patronymic" placeholder="Ну и отчество тоже">
+                  <label class="field__label" for="patronymic">Отчество:</label>
+                  <input class="field__input" type="text" id="patronymic" name="patronymic" placeholder="Ну и отчество тоже">
                 </fieldset>
               </div>
               <div class="contest__achieve-fields">
@@ -93,7 +93,7 @@
               </div>
               <div class="contest__contacts-data">
                 <fieldset class="contest__fields fields-frame">
-                  <legend class="contest__legend">Контактная информация</legend>
+                  <legend class="fields-frame__legend">Контактная информация</legend>
                   <div class="contest__field field">
                     <label class="field__label" for="phone">Номер телефона</label>
                     <input class="field__input--phone" type="tel" id="phone" name="phone" placeholder="Номер,пожалуйста">
@@ -106,7 +106,7 @@
               </div>
               <div class="contest__radio">
                 <fieldset class="contest__fields fields-frame">
-                  <legend class="contest__legend">С каким приложением путешествовали?</legend>
+                  <legend class="fields-frame__legend">С каким приложением путешествовали?</legend>
                   <ul class="contest__app-list">
                     <li class="radio">
                       <input class="visually-hidden" type="radio" id="iOS" name="app" value="iOS" checked>
@@ -125,7 +125,7 @@
               </div>
               <div class="contest__review">
                 <fieldset class="contest__fields fields-frame">
-                  <label class="contest__legend">Опишите свои эмоции</label>
+                  <label class="fields-frame__legend">Опишите свои эмоции</label>
                   <textarea class="contest__textarea" name="review" cols="30" rows="10" placeholder="Можно прям в красках, не стесняясь в выражениях"></textarea>
                 </fieldset>
               </div>
