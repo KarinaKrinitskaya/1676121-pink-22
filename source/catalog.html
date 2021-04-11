@@ -40,22 +40,22 @@
     <main class="page-catalog">
       <div class="page-catalog__container">
         <section class="intro">
-          <h1 class="intro-catalog__title">Фотографии пользователей</h1>
+          <h1 class="intro__title">Фотографии пользователей</h1>
         </section>
-        <section class="photo">
-          <div class="slogan">
-            <p class="photo__slogan">Взгляните на фотографии, которые выкладывают пользователи! Видите, как не хватает ваших?</p>
-          </div>
+        <section class="gallery">
+            <p class="slogan">Взгляните на фотографии, которые выкладывают пользователи! Видите, как не хватает ваших?</p>
           <div class="photo__list">
             <figure class="photo__top">
-              <img  src="img/panorama-desktop.jpg">
-              <span class="photo__text">Панорама дня</span>
-              <figcaption class="photo__content--full">
-              <p class="photo__autor-text">
-                <span class="photo__autor-name">Анна</span>
+              <div class="photo__item">
+              <img class="photo" src="img/panorama-desktop.jpg" alt="Главное фото дня">
+              <span class="photo__label">Панорама дня</span>
+              <p class="photo__text">Прыгать или нет? Напишите в комментарии свой совет и смотрите прямую трансляцию в перископе, задавайте свои вопросы!</p>
+            </div>
+              <figcaption class="photo__content photo__content--full">
+              <div class="photo__meta">
+                <span class="photo__author-name">Анна</span>
                 <span class="photo__time">(5 минут назад)</span>
-                <p class="photo__text">Прыгать или нет? Напишите в комментарии свой совет и смотрите прямую трансляцию в перископе, задавайте свои вопросы!</p>
-              </p>
+              </div>
               <div class="photo__likes">
                 <button class="photo__like-btn" type="button" aria-label="Мне нравится"></button>
                 <span class="photo__like-text">Нравится: 215</span>
@@ -64,8 +64,8 @@
             </figure>
             <figure class="photo__top">
               <figcaption class="photo__content">
-              <p class="photo__autor-text">
-                <span class="photo__autor-name">Левон</span>
+              <p class="photo__author-text">
+                <span class="photo__author-name">Левон</span>
                 <span class="photo__time">(5 часов назад)</span>
                 <p class="photo__text">Вчера он на луну летал, сегодня в руки к нам попал.</p>
               </p>
@@ -78,7 +78,7 @@
             <figure class="photo__top">
               <figcaption class="photo__content">
               <p class="photo__autor-text">
-                <span class="photo__autor-name">Антон</span>
+                <span class="photo__author-name">Антон</span>
                 <span class="photo__time">(12 часов назад)</span>
                 <p class="photo__text">Соседи будут рады!</p>
               </p>
@@ -91,7 +91,7 @@
             <figure class="photo__top">
               <figcaption class="photo__content">
               <p class="photo__autor-text">
-                <span class="photo__autor-name">Борис</span>
+                <span class="photo__author-name">Борис</span>
                 <span class="photo__time">(20 часов назад)</span>
                 <p class="photo__text">Здесь могла быть ваша цитата о высоком и вечном.</p>
               </p>
@@ -103,7 +103,7 @@
             </figure>
             <figure class="photo__top">
               <figcaption class="photo__content">
-              <p class="photo__autor-text">
+              <p class="photo__author-text">
                 <span class="photo__autor-name">Сергей</span>
                 <span class="photo__time">(25 часов назад)</span>
                 <p class="photo__text">Самая кубанская в мире!</p>
@@ -116,8 +116,8 @@
             </figure>
             <figure class="photo__top">
               <figcaption class="photo__content">
-              <p class="photo__autor-text">
-                <span class="photo__autor-name">Максим</span>
+              <p class="photo__author-text">
+                <span class="photo__author-name">Максим</span>
                 <span class="photo__time">(40 часов назад)</span>
                 <p class="photo__text">Где снег-то?</p>
               </p>
@@ -129,7 +129,7 @@
             </figure>
             <figure class="photo__top">
               <figcaption class="photo__content">
-              <p class="photo__autor-text">
+              <p class="photo__author-text">
                 <span class="photo__autor-name">Надежда</span>
                 <span class="photo__time">(45 часов назад)</span>
                 <p class="photo__text">Всем GM и взаимные лайки!</p>
@@ -148,31 +148,29 @@
         <div class="upload__container">
           <h2 class="visually-hidden">Загрузка фотографий</h2>
           <img src="" alt="">
-          <div class="upload-tools">
-            <ul class="upload-list">
-              <li class="upload-control">
+            <ul class="upload__list">
+              <li class="upload__controls">
                 <div class="upload__control">
                   <div class="upload__bar"></div>
                   <button class="upload__toggle" type="button" aria-label="Обрезать изображение"></button>
                 </div>
               </li>
-              <li class="upload__control">
+              <li class="upload__controls">
                 <div class="upload__control">
                   <div class="upload__bar"></div>
                   <button class="upload__toggle" type="button" aria-label="Заливка изображения"></button>
                 </div>
               </li>
-              <li class="upload__control">
+              <li class="upload__controls">
                 <div class="upload__control">
                   <div class="upload__bar"></div>
                   <button class="upload__toggle" type="button" aria-label="Изменить контрастность изображения"></button>
                 </div>
               </li>
             </ul>
-          </div>
           <div class="upload__btns">
-            <button class="upload__btn--post" type="button">Запостить</button>
-            <button class="upload__btn--cancel" type="button">Отмена</button>
+            <button class="upload__btn upload__btn--post" type="button">Запостить</button>
+            <button class="upload__btn upload__btn--cancel" type="button">Отмена</button>
           </div>
         </div>
       </section>
