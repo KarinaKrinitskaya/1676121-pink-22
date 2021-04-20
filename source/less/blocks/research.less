@@ -1,4 +1,55 @@
-.research {
-
-
+.research__container {
+  width: 660px;
+  margin: 0 auto;
+  position: relative;
+  display: flex;
   }
+
+.research__image {
+  width: 290px;
+  height: 330px;
+  background-image: url(../../img/diagram-fill.svg),url(../../img/timer.svg);
+  background-repeat: no-repeat;
+  background-position: 20px 112px,0 56px;
+  background-size: 199px 199px,241px 274px;
+}
+
+.research__image::after {
+  position: absolute;
+  content: "24";
+  font-size: 96px;
+  line-height: 96px;
+  font-weight: 700;
+  color: @pink;
+  top: 160px;
+  left: 60px;
+}
+
+.research__aside {
+  width: 310px;
+  margin: 0 auto;
+  padding-top: 62px;
+  padding-bottom: 109px;
+  padding-left: 17px;
+}
+
+.research__title {
+  font-size: 30px;
+  line-height: 36px;
+  margin-bottom: 10px;
+  width: 168px;
+}
+
+.research__text {
+  font-size: 14px;
+  line-height: 24px;
+  margin-top: 24px;
+  margin-bottom: 24px;
+}
+
+.research__link {
+  font-size: 14px;
+  line-height: 24px;
+  color: @pink;
+  text-decoration: underline;
+}
