@@ -21,5 +21,55 @@
 }
 
 .upload__bar {
-  padding-bottom: 125px;
+  display: block;
+  height: 2px;
+  background: @desaturated-blue;
+  margin-bottom: 125px;
+
 }
+
+.upload__toggle {
+
+}
+
+.upload__controls--crop::before {
+  content: '';
+  position: absolute;
+  background-image: url(../../img/crop.svg);
+  background-repeat: no-repeat;
+  height: 44px;
+  width: 44px;
+}
+
+.upload__controls--fill::before {
+  content: '';
+  position: absolute;
+  background-image: url(../../img/fill.svg);
+  background-repeat: no-repeat;
+  height: 44px;
+  width: 44px;
+}
+
+.upload__controls--contrast::before {
+  content: '';
+  position: absolute;
+  background-image: url(../../img/contrast.svg);
+  background-repeat: no-repeat;
+  height: 44px;
+  width: 44px;
+}
+
+.upload__btn {
+  font-family: inherit;
+  width: 280px;
+  border-color: @pink;
+  border-radius: 25px;
+  color: @pink;
+  background-color: transparent;
+  display: inline-block;
+  padding: 15px 35px;
+  vertical-align: top;
+  text-decoration: none;
+  cursor: pointer;
+}
+
