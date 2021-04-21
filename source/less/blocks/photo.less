@@ -1,0 +1,72 @@
+.photo {
+  position: relative;
+}
+
+.photo--wide::after {
+  content: "Панорама дня";
+  position: absolute;
+  top: 0;
+  right: 18px;
+  width: 120px;
+  height: 30px;
+  background-color: @pink;
+  color: @basic-white;
+  font-size: 12px;
+  line-height: 24px;
+  font-weight: 700;
+  text-transform: uppercase;
+  padding-top: 7px;
+  padding-left: 19px;
+  padding-right: 11px;
+}
+
+.photo__content {
+  width: 280px;
+  padding: 26px 17px 10px 26px;
+  background-color: @light-gray;
+  color: @desaturated-blue;
+}
+
+.photo__author {
+  font-size: 14px;
+  line-height: 24px;
+  font-weight: 700;
+}
+
+.photo__time {
+  font-size: 12px;
+  line-height: 24px;
+  font-weight: lighter;
+  text-transform: uppercase;
+}
+
+.photo__text {
+  font-size: 14px;
+  line-height: 24px;
+}
+
+.photo__likes {
+  display: flex;
+  position: relative;
+  margin-top: 9px;
+  font-size: 12px;
+  color: @pink;
+  text-transform: uppercase;
+}
+
+.photo__like-btn {
+  display: block;
+  padding: 0;
+  width: 13px;
+  height: 12px;
+  border: 0;
+  background-color: transparent;
+  background-image: url(../../img/heart-likes.svg);
+  background-repeat: no-repeat;
+  background-size: contain;
+  cursor: pointer;
+}
+
+.photo__like-text {
+  margin-left: 48px;
+}
