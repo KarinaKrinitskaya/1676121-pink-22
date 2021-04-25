@@ -9,10 +9,28 @@
   align-items: center;
 }
 
-.main-nav__toggle{
+.main-nav__toggle {
   display: none;
 }
 
 .main-nav__list__item a {
   color: @basic-white;
 }
+
+@media (min-width: @desktop-width) {
+  .main-nav__container {
+    display: flex;
+    justify-content: space-between;
+    width: 930px;
+    margin: 0 auto;
+  }
+
+  .main-nav__list {
+    display: flex;
+  }
+
+  .main-nav__list__item {
+   margin-left: 78px;
+  }
+}
+

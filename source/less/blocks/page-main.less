@@ -12,6 +12,24 @@
   min-height: 632px;
  }
 
+  @media (min-width: @tablet-width) {
+  .page-main__download {
+    background-image: url(../../img/back-tablet.jpg);
+    background-repeat: no-repeat;
+    background-size: auto;
+    min-height: 660px;
+    }
+  }
+
+@media (min-width: @desktop-width) {
+  .page-main__download {
+    background-image: url(../../img/back-desktop.jpg);
+    background-repeat: no-repeat;
+    background-size: auto;
+    min-height: 1050px;
+    }
+  }
+
  .page-main__download::before {
   background-image: url(../../img/phone.png);
   content: "";
@@ -22,9 +40,43 @@
   margin-top: 90px;
 }
 
+@media (min-width: @tablet-width) {
+ .page-main__download::before {
+    background-image: url(../../img/phone-tablet.png);
+    background-repeat: no-repeat;
+    content: "";
+    position: absolute;
+    width: 660px;
+    height: 545px;
+    left: 0;
+    bottom: 297px;
+    }
+  }
+
+@media (min-width: @desktop-width) {
+ .page-main__download::before {
+    background-image: url(../../img/phone-desktop.png);
+    background-repeat: no-repeat;
+    content: "";
+    position: absolute;
+    width: 1050px;
+    height: 645px;
+    bottom: -290px;
+    }
+  }
+
 .page-main__slogan {
   margin: 0 auto;
-  width: 230px;
+  padding: 41px 20px 32px;
+  max-width: 940px;
+
+  @media (min-width: @tablet-width) {
+    padding: 49px 20px 48px;
+  }
+
+  @media (min-width: @desktop-width) {
+    padding: 67px 10px 76px;
+  }
 
 }
 
@@ -35,5 +87,16 @@
   line-height: 29px;
   color: @desaturated-blue;
   font-weight: lighter;
-  text-align: center
+  text-align: center;
+
+  @media (min-width: @tablet-width) {
+    margin-bottom: 0;
+    font-size: 40px;
+    line-height: 48px;
+  }
+
+  @media (min-width: @desktop-width) {
+    font-size: 50px;
+    line-height: 60px;
+  }
 }

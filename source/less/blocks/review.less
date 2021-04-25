@@ -1,14 +1,54 @@
 .review {
-  padding: 42px 0 36px;
+  position: relative;
+  text-align: center;
+  padding-top: 30px;
+  padding-bottom: 30px;
+
+  @media (min-width: @tablet-width) {
+    padding-top: 24px;
+    padding-bottom: 24px;
+  }
+
+  @media (min-width: @desktop-width) {
+    padding-top: 185px;
+    padding-bottom: 40px;
+    background-image: url("../../img/quotes-review.svg");
+    background-repeat: no-repeat;
+    background-position: 50% 73px;
+    background-size: 79px 63px;
+  }
 }
 
 .review__list {
-  text-align: center;
-  width: 364px;
+  flex-direction: column;
+  height: 238px;
+  line-height: 30px;
+
+  @media (min-width: @tablet-width)  {
+    height: 187px;
+  }
+
+  @media (min-width: @desktop-width) {
+    margin: 0 auto;
+    padding-top: 0;
+    padding-bottom: 0;
+    width: 780px;
+  }
 }
 
 .review__item {
   margin: 0;
+  max-height: 160px;
+
+   @media (min-width: @tablet-width) {
+    margin-bottom: 13px;
+    max-height: 90px;
+    font-size: 18px;
+  }
+
+  @media (min-width: @desktop-width) {
+    position: relative;
+  }
 }
 
 .review__name {

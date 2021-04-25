@@ -1,11 +1,30 @@
 .page-footer {
   padding-top: 40px;
   padding-bottom: 40px;
+
+  @media (min-width: @tablet-width) {
+    padding-top: 38px;
+    padding-bottom: 38px;
+  }
+
+  @media (min-width: @desktop-width) {
+    padding-top: 72px;
+    padding-bottom: 74px;
+  }
+
 }
 
 .page-footer__container {
+  display: flex;
+  flex-direction: column;
   align-items: center;
   width: 100%;
+
+  @media (min-width: @tablet-width){
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: stretch;
+  }
 }
 
 
