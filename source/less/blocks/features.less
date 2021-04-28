@@ -7,9 +7,34 @@
 }
 
 .features__list {
-  padding: 0;
-  margin: 0;
+  margin: 0 auto;
+  padding: 64px 20px 0px;
   list-style: none;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+
+  @media (min-width: @tablet-width) {
+  flex-direction: column;
+  align-items: flex-end;
+  padding: 55px 20px 27px;
+  width: 620px;
+  background-image: url(../img/iphone-tablet.png);
+  background-repeat: no-repeat;
+  background-position: 10% 80px;
+  background-size: 237px 500px;
+
+  }
+
+  @media (min-width: @desktop-width) {
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: stretch;
+    padding: 0 0 30px;
+    width: 940px;
+    max-width: 100%;
+    background: none;
+  }
 }
 
 .features__item {
@@ -18,10 +43,77 @@
   padding-bottom: 43px;
   }
 
-.features__item:last-child {
-  background-image: url(../../img/iphone-features.png);
+  .features__item:first-child {
+  background-image: url(../img/iphone-features.png);
   background-repeat: no-repeat;
   background-position: 40% 170px;
   background-size: 157px auto;
   padding-bottom: 318px;
+
+  @media (min-width: @tablet-width){
+  padding-bottom: 43px;
+  background: none;
+  }
+
+  @media (min-width: @mobile-width-only){
+  padding-bottom: 43px;
+  background: none;
+  }
+
+  @media (min-width: @desktop-width){
+  background-image: url(../img/iphone-features.png);
+  background-repeat: no-repeat;
+  background-position: 40% 170px;
+  background-size: 157px auto;
+  padding-bottom: 318px;
+  }
 }
+
+.features__item:nth-child(2) {
+  background-image: url(../img/iphone-features.png);
+  background-repeat: no-repeat;
+  background-position: 40% 170px;
+  background-size: 157px auto;
+  padding-bottom: 318px;
+
+  @media (min-width: @tablet-width){
+  padding-bottom: 43px;
+  background: none;
+  }
+
+  @media (min-width: @mobile-width-only){
+  padding-bottom: 43px;
+  background: none;
+  }
+
+  @media (min-width: @desktop-width){
+  background-image: url(../img/iphone-features.png);
+  background-repeat: no-repeat;
+  background-position: 40% 170px;
+  background-size: 157px auto;
+  padding-bottom: 318px;
+  }
+}
+
+.features__item:last-child {
+  background-image: url(../img/iphone-features.png);
+  background-repeat: no-repeat;
+  background-position: 40% 170px;
+  background-size: 157px auto;
+  padding-bottom: 318px;
+
+  @media (min-width: @tablet-width){
+  padding-bottom: 43px;
+  background: none;
+  }
+
+  @media (min-width: @desktop-width){
+  background-image: url(../img/iphone-features.png);
+  background-repeat: no-repeat;
+  background-position: 40% 170px;
+  background-size: 157px auto;
+  padding-bottom: 318px;
+  }
+}
+
+

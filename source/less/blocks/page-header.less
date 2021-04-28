@@ -1,7 +1,28 @@
 .page-header {
-  position: relative;
   color: @basic-white;
-  background-color: @dark-blue;
+  background-color: @transpparent-color;
   font-size: 18px;
   line-height: 18px;
+  position: absolute;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+.page-header__container {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  background-color: none;
+
+  @media (min-width: @desktop-width) {
+  flex-wrap: nowrap;
+  justify-content: space-between;
+  margin: 0 auto;
+  max-width: 940px;
+  }
+}
+
+.page-header__logo {
+  padding: 23px 20px;
 }

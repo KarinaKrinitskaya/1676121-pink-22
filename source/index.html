@@ -2,13 +2,17 @@
 <html class="page" lang="ru">
   <head>
     <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>HTML Academy: Пинк</title>
     <link rel="stylesheet" href="css/style.css">
   </head>
   <body class="page__body">
     <header class="page-header">
-      <a class="page-header__logo">
-        <img src="img/pink-logo-mobile.svg" width="74" height="23" alt="Логотип сайта Пинк">
+      <div class="page-header__container">
+      <a class="page-header__logo logo">
+        <img class="logo__header logo__header--mobile" src="img/pink-logo-mobile.svg" width="74" height="23" alt="Логотип сайта Пинк">
+        <img class="logo__header logo__header--tablet" src="img/logotype-white-tablet.svg" width="145" height="40" alt="Логотип сайта Пинк">
+        <img class="logo__header logo__header--desktop" src="img/logotype-white-desktop.svg" width="147" height="40" alt="Логотип сайта Пинк">
       </a>
       <nav class="main-nav">
         <button class="main-nav__toggle" type="button"><span class="visually-hidden">Открыть меню</span></button>
@@ -37,12 +41,14 @@
           </ul>
         </div>
       </nav>
+    </div>
     </header>
     <main class="page-main">
       <h1 class="visually-hidden">Приложение PINK</h1>
       <div class="download page-main__download">
-        <div class="download__container">
+        <div class="download__container container">
           <p class="download__title">Взгляните на жизнь иначе!</p>
+          <div class="download__app">
           <a class="download__button" href="#">Скачать приложение</a>
           <ul class="download__list">
             <li class="download__item">
@@ -76,13 +82,14 @@
           <p class="download__text">Доступно для iPhone, iPad, Android, Windows Phone, OS X, Windows 8</p>
         </div>
       </div>
-      <div class="page-main__slogan">
+      </div>
+      <div class="page-main__slogan container">
         <p>Устали от серости мегаполиса?</p>
         <p>Нам есть, что вам предложить!</p>
       </div>
       <section class="features">
         <h2 class="visually-hidden">Что делает приложение?</h2>
-        <ul class="features__list">
+        <ul class="features__list container">
           <li class="features__item">
             <h3 class="features__title">Поднимает настроение</h3>
             <p class="features__text">Приложение позволит вам победить осеннюю хандру и депрессию буквально в несколько кликов!</p>
@@ -96,6 +103,7 @@
             <p class="features__text">Ставьте лайки, комментируйте, делитесь фотографиями с друзьями и заводите новых</p>
           </li>
         </ul>
+        <div class="features-img"></div>
       </section>
       <section class="research">
         <div class="research__container">
@@ -110,7 +118,7 @@
         </div>
       </section>
       <section class="review">
-        <div class="review__container slider">
+        <div class="review__container slider container">
           <h2 class="visually-hidden">Отзывы пользователей</h2>
           <div class="review__list">
             <blockquote class="review__item">
@@ -132,7 +140,7 @@
       </section>
       <section class="price">
         <h2 class="visually-hidden">Тарифы</h2>
-        <div class="price__container slider">
+        <div class="price__container slider container">
           <table class="price__table table-price">
             <tr>
               <th class="table-price"></th>
@@ -182,7 +190,7 @@
         </div>
       </section>
       <section class="contacts">
-        <div class="contacts__container">
+        <div class="contacts__container container">
           <h2 class="visually-hidden">Контакты</h2>
           <p class="contacts__title">Остались вопросы? Свяжитесь с нами!</p>
           <ul class="contacts__list">
@@ -206,7 +214,7 @@
       </div>
     </main>
     <footer class="page-footer">
-      <div class="page-footer__container">
+      <div class="page-footer__container container">
         <a class="page-footer__logo">
           <img  src="img/logotype-blue-tablet.svg" alt="Логотип Сайта Пинк">
         </a>

@@ -1,30 +1,103 @@
 .page-main {
   font-size: 18px;
   line-height: 24px;
-
 }
+
  .page-main__download {
-  background-image: url(../../img/back-mobile.jpg);
+  background-image: url(../img/back-mobile.jpg);
   background-repeat: no-repeat;
-  background-size: auto;
+  background-size: 100%;
   color: @basic-white;
   background-color: @dark-blue;
   min-height: 632px;
  }
 
+  @media (min-width: @tablet-width) {
+  .page-main__download {
+    background-image: url(../img/back-tablet.jpg);
+    background-repeat: no-repeat;
+    background-size: 100%;
+    min-height: 660px;
+    }
+  }
+
+@media (min-width: @desktop-width) {
+  .page-main__download {
+    background-image: url(../img/back-desktop.jpg);
+    background-repeat: no-repeat;
+    background-size: 100%;
+    min-height: 900px;
+    }
+  }
+
  .page-main__download::before {
-  background-image: url(../../img/phone.png);
+  background-image: url(../img/phone.png);
   content: "";
   position: absolute;
   width: 286px;
   height: 320px;
   background-repeat: no-repeat;
-  margin-top: 90px;
+  margin-top: 140px;
+}
+
+@media (min-width: @tablet-width) {
+ .page-main__download::before {
+    background-image: url(../img/phone-tablet.png);
+    background-repeat: no-repeat;
+    content: "";
+    position: absolute;
+    width: 660px;
+    height: 545px;
+    left: 0;
+    bottom: 297px;
+    }
+  }
+
+@media (min-width: @desktop-width) {
+ .page-main__download::before {
+    background-image: url(../img/phone-desktop.png);
+    background-repeat: no-repeat;
+    content: "";
+    position: absolute;
+    width: 1050px;
+    height: 645px;
+    bottom: -290px;
+    }
+  }
+
+.download__container {
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 20px;
+  padding-right: 20px;
+  max-width: 480px;
+}
+
+@media (min-width: @tablet-width) {
+  .download__container {
+    margin-left: 20px;
+    margin-right: 340px;
+    max-width: 800px;
+  }
 }
 
 .page-main__slogan {
-  margin: 0 auto;
-  width: 230px;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 20px;
+  padding-right: 20px;
+  max-width: 480px;
+
+  @media (min-width: @tablet-width) {
+    padding: 58px 40px 47px;
+    max-width: 800px;
+  }
+
+  @media (min-width: @desktop-width) {
+    padding: 72px 0 77px;
+    width: 940px;
+    max-width: 100%;
+  }
 
 }
 
@@ -35,5 +108,16 @@
   line-height: 29px;
   color: @desaturated-blue;
   font-weight: lighter;
-  text-align: center
+  text-align: center;
+
+  @media (min-width: @tablet-width) {
+    margin-bottom: 0;
+    font-size: 40px;
+    line-height: 48px;
+  }
+
+  @media (min-width: @desktop-width) {
+    font-size: 50px;
+    line-height: 60px;
+  }
 }

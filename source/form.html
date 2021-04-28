@@ -7,8 +7,10 @@
   </head>
   <body class="page__body">
     <header class="page-header">
-      <a class="page-header__logo">
-        <img src="img/pink-logo-mobile.svg" width="74" height="23" alt="Логотип сайта Пинк">
+      <a class="page-header__logo logo">
+        <img class="logo__header logo__header--mobile" src="img/pink-logo-mobile.svg" width="74" height="23" alt="Логотип сайта Пинк">
+        <img class="logo__header logo__header--tablet" src="img/logotype-white-tablet.svg" width="145" height="40" alt="Логотип сайта Пинк">
+        <img class="logo__header logo__header--desktop" src="img/logotype-white-desktop.svg" width="147" height="40" alt="Логотип сайта Пинк">
       </a>
       <nav class="main-nav">
         <button class="main-nav__toggle" type="button"><span class="visually-hidden">Открыть меню</span></button>
@@ -41,13 +43,13 @@
     <main class="page-form">
       <div class="page-form__container">
         <section class="intro">
-          <p class="intro__title">Конкурс на самое безбашенное путешествие с Пинк</p>
+          <p class="intro__title container">Конкурс на самое безбашенное путешествие с Пинк</p>
         </section>
         <section class="contest">
-            <p class="slogan">Поделитесь своей историей и получите шанс выиграть ценный приз — 1000 миль на вашу бонусную карту! Пожалуйста, заполните форму ниже:</p>
-          <form class="contest__form" method="post" action="https://echo.htmlacademy.ru">
+            <p class="slogan container">Поделитесь своей историей и получите шанс выиграть ценный приз — 1000 миль на вашу бонусную карту! Пожалуйста, заполните форму ниже:</p>
+          <form class="contest__form container" method="post" action="https://echo.htmlacademy.ru">
             <div class="contest__surname">
-              <fieldset class="contest__fields">
+              <fieldset class="contest__fields name">
                 <div class="contest__field field">
                   <label class="field__label" for="surname">Фамилия:</label>
                   <input class="field__input" type="text" id="surname" name="surname" required placeholder="Укажите фамилию *">
@@ -166,4 +168,4 @@
       </div>
     </footer>
   </body>
-</html>.
+</html>

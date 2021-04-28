@@ -1,0 +1,47 @@
+.logo {
+
+}
+
+.logo__header--tablet {
+  display: none;
+  }
+
+  .logo__header--desktop {
+      display: none;
+    }
+
+@media (min-width: @tablet-width) {
+  .logo {
+    padding-left: 0;
+  }
+
+  .logo__header--mobile {
+      display: none;
+    }
+
+    .logo__header--tablet {
+      display: block;
+    }
+
+    .logo__header--desktop {
+      display: none;
+    }
+  }
+
+@media (min-width: @desktop-width) {
+  .logo {
+    padding-left: 0;
+  }
+
+  .logo__header--mobile {
+      display: none;
+    }
+
+    .logo__header--tablet {
+      display: none;
+    }
+
+    .logo__header--desktop {
+      display: block;
+    }
+  }

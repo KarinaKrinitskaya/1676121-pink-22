@@ -4,25 +4,79 @@
   }
 
 .slogan {
-  margin: 0;
+  margin: 0 auto;
   padding: 54px;
   font-size: 14px;
   line-height: 30px;
   color: @desaturated-blue;
   text-align: center;
+
+  @media (min-width: @tablet-width) {
+  font-size: 18px;
+  }
+
+  @media (min-width: @desktop-width) {
+  max-width: 756px;
+  font-size: 18px;
+  }
 }
 
 .contest__form {
   font-size: 18px;
+
+  @media (min-width: @tablet-width) {
+  display: flex;
+  flex-direction: column;
+  padding: 0 20px;
+  }
+
+  @media (min-width: @desktop-width) {
+  flex-flow: row wrap;
+  padding: 0 10px;
+  }
+}
+
+.contest__surname {
+  padding-bottom: 42px;
 }
 
 .contest__fields {
-  padding-top: 42px;
-  border: 0;
+  border: none;
+  margin: 0;
+
+   @media (min-width: @desktop-width) {
+  padding: 0;
+  border: 2px solid @light-gray;
+  border-radius: 2px;
+  }
+
+}
+
+.name {
+  border: none;
 }
 
 .contest__achieve-fields {
   background-color: @light-gray;
+
+  @media (min-width: @tablet-width) {
+    order: 3;
+    background-color: @basic-white;
+  }
+
+  @media (min-width: @desktop-width) {
+    width: 100%;
+  }
+}
+
+.contest__contacts-data {
+  @media (min-width: @tablet-width) {
+    order: 2;
+  }
+
+  @media (min-width: @desktop-width) {
+    width: 100%;
+  }
 }
 
 .content__checkbox-list {
@@ -38,6 +92,17 @@
 
 .contest__radio {
   background-color: @light-gray;
+
+   @media (min-width: @tablet-width) {
+    order: 1;
+    background-color: @basic-white;
+  }
+
+  @media (min-width: @desktop-width) {
+    margin-left: auto;
+    padding-top: 30px;
+    width: 435px;
+  }
 }
 
 .contest__app-list {
@@ -52,6 +117,14 @@
 
 .contest__review {
   padding-top: 42px;
+
+  @media (min-width: @tablet-width) {
+    order: 4;
+  }
+
+  @media (min-width: @desktop-width) {
+    width: 100%;
+  }
 }
 
 .fields-frame__textarea {
@@ -61,6 +134,22 @@
   min-height: 197px;
   border: 2px solid @borders-color;
   line-height: 29px;
+}
+.contest__button{
+  display: flex;
+  flex-direction: column;
+  padding: 29px 20px 15px;
+
+  @media (min-width: @tablet-width) {
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    order: 5;
+  }
+
+  @media (min-width: @desktop-width) {
+    width: 100%;
+  }
 }
 
 .button {

@@ -1,5 +1,5 @@
 .main-nav {
-  width: 100%;
+ width: 100%;
 }
 
 .main-nav__list {
@@ -9,10 +9,32 @@
   align-items: center;
 }
 
-.main-nav__toggle{
+.main-nav__toggle {
   display: none;
 }
 
 .main-nav__list__item a {
   color: @basic-white;
 }
+
+.main-nav__container {
+  display: none;
+}
+
+@media (min-width: @desktop-width) {
+  .main-nav__container {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    margin: 40px auto;
+  }
+
+  .main-nav__list {
+    display: flex;
+  }
+
+  .main-nav__list__item {
+   margin-left: 78px;
+  }
+}
+
