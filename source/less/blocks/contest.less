@@ -33,6 +33,7 @@
   @media (min-width: @desktop-width) {
   flex-flow: row wrap;
   padding: 0 10px;
+
   }
 }
 
@@ -43,6 +44,12 @@
 .contest__fields {
   border: none;
   margin: 0;
+
+  @media (min-width: @tablet-width) {
+  padding: 0;
+  border: 2px solid @light-gray;
+  border-radius: 2px;
+  }
 
    @media (min-width: @desktop-width) {
   padding: 0;
@@ -70,6 +77,7 @@
 }
 
 .contest__contacts-data {
+  width: 100%;
   @media (min-width: @tablet-width) {
     order: 2;
   }
@@ -79,11 +87,25 @@
   }
 }
 
+.contest__fields--contacts {
+  margin-bottom: 53px;
+  @media (min-width: @desktop-width) {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  }
+}
+
 .content__checkbox-list {
   display: inline-block;
   margin: 0;
   padding: 0;
   list-style: none;
+
+  @media (min-width: @desktop-width) {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  }
 }
 
 .checkbox {
