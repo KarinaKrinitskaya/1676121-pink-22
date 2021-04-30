@@ -2,6 +2,10 @@
   position: relative;
   margin: 0;
 
+@media (min-width: @desktop-width){
+    width: 300px;
+    margin-top: 53px;
+  }
 }
 
 .photo__link{
@@ -80,7 +84,6 @@
 }
 
 .gallery__container {
-
 @media (min-width: @tablet-width) {
  display: flex;
  flex-wrap: wrap;
@@ -89,7 +92,6 @@
 @media (min-width: @desktop-width) {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
-padding: 0 10px;
-max-width: 940px;
+  max-width: 940px;
   }
 }
