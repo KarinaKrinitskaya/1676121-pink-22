@@ -2,6 +2,11 @@
   position: relative;
   margin: 0;
 
+@media (min-width: @tablet-width) {
+  width: 300px;
+  margin-top: 20px;
+  }
+
 @media (min-width: @desktop-width){
     width: 300px;
     margin-top: 53px;
@@ -9,6 +14,17 @@
 }
 
 .photo__link{
+}
+
+.photo--wide {
+  margin-top: 0;
+  margin-bottom: 20px;
+
+@media (min-width: @tablet-width) {
+  width: 100%;
+  margin-top: 0;
+  margin-bottom: 50px;
+  }
 }
 
 .photo--wide::after {
@@ -34,7 +50,7 @@
   flex-direction: column;
   flex-grow: 1;
   font-size: 14px;
-  padding: 26px 17px 10px 26px;
+  padding: 18px;
   background-color: @light-gray;
   color: @desaturated-blue;
 }
@@ -87,6 +103,7 @@
 @media (min-width: @tablet-width) {
  display: flex;
  flex-wrap: wrap;
+ justify-content: space-around;
   }
 
 @media (min-width: @desktop-width) {
