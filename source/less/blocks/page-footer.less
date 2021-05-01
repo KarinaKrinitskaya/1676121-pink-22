@@ -5,10 +5,38 @@
   width: 100%;
 
   @media (min-width: @tablet-width){
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    align-items: center;
     flex-direction: row;
     justify-content: space-between;
     align-items: stretch;
   }
 }
 
+.page-footer__logo {
 
+  margin: 0;
+  padding: 0;
+}
+
+.page-footer__social {
+  justify-content: center;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  margin-top: 5px;
+  margin: 0;
+  padding: 0;
+}
+
+.social__item{
+  margin: 0 10px;
+}
+
+.page-footer__copyright {
+display: flex;
+    justify-content: flex-end;
+  margin-top: -22px;
+  padding: 0;
+}

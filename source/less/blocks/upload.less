@@ -1,20 +1,33 @@
-.upload {
+.upload__container  {
   background-color: @light-gray;
+  @media (min-width: @desktop-width) {
+    padding-top: 57px;
+   padding-left: 80px;
+    padding-right: 90px;
+    padding-bottom: 57px;
+  }
 }
-
-.upload__container {
-
+.upload{
+   background-color: @light-gray;
 }
 
 .upload__content{
   @media (min-width: @tablet-width) {
-display: flex;
+display: grid;
+grid-template-columns: 1fr 1fr;
+column-gap: 90px;
+
   }
 
   @media (min-width: @desktop-width) {
-display: flex;
+display: grid;
   }
 }
+
+.ubload__img img{
+  width: 100%;
+}
+
 .upload__list {
   padding-top: 30px;
   display: flex;
@@ -96,20 +109,23 @@ display: block;
 }
 
 .upload__btns {
-
+    display: flex;
+    flex-direction: column;
   @media (min-width: @tablet-width) {
-  flex-direction: row;
-  padding-top: 250px;
+margin: 115px 14px 0 2px;
   }
 
   @media (min-width: @desktop-width) {
-padding-top: 400px;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-left: 0;
+    margin-right: 0;
+    margin-top: 250px;
   }
 }
 
 .upload__btn {
   font-family: inherit;
-  width: 280px;
   border-radius: 25px;
   color: @pink;
   background-color: transparent;
@@ -119,6 +135,11 @@ padding-top: 400px;
   text-decoration: none;
   cursor: pointer;
   border: 3px solid @pink;
+  margin-bottom: 12px;
 
+
+@media (min-width: @tablet-width) {
+  margin-bottom: 24px;
+  }
 }
 

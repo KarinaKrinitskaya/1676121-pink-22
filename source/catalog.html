@@ -46,17 +46,19 @@
     <main class="page-catalog">
       <div class="page-catalog__container">
         <section class="intro">
-          <h1 class="intro__title container">Фотографии пользователей</h1>
+          <div class="intro__container container">
+          <h1 class="intro__title">Фотографии пользователей</h1>
+        </div>
         </section>
-        <section class="gallery container">
+        <section class="gallery">
             <p class="slogan">Взгляните на фотографии, которые выкладывают пользователи! Видите, как не хватает ваших?</p>
-            <div class="gallery__container">
+            <div class="gallery__container container">
               <figure class="photo photo--wide">
-              <a class="photo__link" href="#">
-                <img class="photo__link photo__link--wide" src="img/panorama-desktop.jpg" alt="Главное фото дня">
+              <a class="photo__link photo__link--wide" href="#">
+                <img class="link__img link__img--wide" src="img/panorama-desktop.jpg" alt="Главное фото дня">
               </a>
-              <span class="visually-hidden">Панорама дня</span>
-                <figcaption class="photo__content container">
+              <span class="gallery__stiker">Панорама дня</span>
+                <figcaption class="photo__content">
                   <div class="photo__info">
                     <span class="photo__author">Анна</span>
                     <span class="photo__time">(5 минут назад)</span>
@@ -69,8 +71,8 @@
                 </figcaption>
             </figure>
             <figure class="photo">
-              <a href="#">
-                <img class="photo__link" src="img/photo-1-levon.jpg" alt="Фото Левона">
+              <a class="photo__link" href="#">
+                <img class="link__img"  src="img/photo-1-levon.jpg" alt="Фото Левона">
               </a>
               <figcaption class="photo__content">
                     <span class="photo__author">Левон</span>
@@ -84,7 +86,7 @@
             </figure>
             <figure class="photo">
               <a class="photo__link" href="#">
-                <img src="img/photo-2-anton.jpg" alt="Фото Антона">
+                <img class="link__img"  src="img/photo-2-anton.jpg" alt="Фото Антона">
               </a>
               <figcaption class="photo__content">
                   <span class="photo__author">Антон</span>
@@ -98,7 +100,7 @@
             </figure>
             <figure class="photo">
               <a class="photo__link" href="#">
-                <img src="img/photo-3-boris.jpg" alt="Фото Бориса">
+                <img class="link__img"  src="img/photo-3-boris.jpg" alt="Фото Бориса">
               </a>
               <figcaption class="photo__content">
                   <span class="photo__author">Борис</span>
@@ -112,7 +114,7 @@
             </figure>
             <figure class="photo">
               <a class="photo__link" href="#">
-                <img src="img/photo-4-sergei.jpg" alt="Фото Сергея">
+                <img class="link__img" src="img/photo-4-sergei.jpg" alt="Фото Сергея">
               </a>
               <figcaption class="photo__content">
                   <span class="photo__author">Сергей</span>
@@ -126,7 +128,7 @@
             </figure>
             <figure class="photo">
               <a class="photo__link" href="#">
-                <img src="img/photo-5-maxim.jpg" alt="Фото Максима">
+                <img class="link__img" src="img/photo-5-maxim.jpg" alt="Фото Максима">
               </a>
               <figcaption class="photo__content">
                   <span class="photo__author">Максим</span>
@@ -140,7 +142,7 @@
             </figure>
             <figure class="photo">
               <a class="photo__link" href="#">
-                <img src="img/photo-6-nadejda.jpg" alt="Фото Надежды">
+                <img class="link__img"  src="img/photo-6-nadejda.jpg" alt="Фото Надежды">
               </a>
               <figcaption class="photo__content">
                   <span class="photo__author">Надежда</span>
@@ -156,11 +158,14 @@
         </section>
         <p class="slogan">Затмите их всех! Выкладывайте все, что накопилось в телефоне!</p>
       </div>
-      <section class="upload">
-        <div class="upload__container container">
+      <section class="upload container">
+        <div class="upload__container">
           <div class="upload__content">
           <h2 class="visually-hidden">Загрузка фотографий</h2>
+          <div class="ubload__img">
           <img src="img/photo-7-tablet.jpg" alt="">
+        </div>
+        <div class="upload__tools">
             <ul class="upload__list">
               <li class="upload__controls upload__controls--crop">
                   <div class="upload__bar"></div>
@@ -181,10 +186,11 @@
           </div>
         </div>
         </div>
+        </div>
       </section>
     </main>
-<footer class="page-footer">
-      <div class="page-footer__container container">
+<footer class="page-footer container">
+      <div class="page-footer__container">
         <a class="page-footer__logo">
           <img  src="img/logotype-blue-tablet.svg" alt="Логотип Сайта Пинк">
         </a>
