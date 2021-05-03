@@ -27,6 +27,10 @@ display: grid;
 .ubload__img img{
   width: 100%;
 }
+.upload__tools{
+ display: flex;
+flex-direction: column;
+}
 
 .upload__list {
   padding-top: 30px;
@@ -86,8 +90,8 @@ display: block;
   position: absolute;
   background-image: url(../img/fill.svg);
   background-repeat: no-repeat;
-  height: 44px;
-  width: 44px;
+  height: 48px;
+  width: 43px;
   left: 136px;
      @media (min-width: @tablet-width) {
     left: 50px;
@@ -99,8 +103,8 @@ display: block;
   position: absolute;
   background-image: url(../img/contrast.svg);
   background-repeat: no-repeat;
-  height: 44px;
-  width: 44px;
+  height: 32px;
+  width: 32px;
   left: 219px;
 
     @media (min-width: @tablet-width) {
@@ -111,8 +115,9 @@ display: block;
 .upload__btns {
     display: flex;
     flex-direction: column;
+    margin-top: auto;
   @media (min-width: @tablet-width) {
-margin: 115px 14px 0 2px;
+
   }
 
   @media (min-width: @desktop-width) {
@@ -120,7 +125,7 @@ margin: 115px 14px 0 2px;
     justify-content: space-between;
     margin-left: 0;
     margin-right: 0;
-    margin-top: 250px;
+
   }
 }
 
