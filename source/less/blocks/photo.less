@@ -1,27 +1,70 @@
 .photo {
   position: relative;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+
+@media (min-width: @tablet-width) {
+
+  }
+
+@media (min-width: @desktop-width){
+
+  }
 }
 
-.photo--wide::after {
-  content: "Панорама дня";
-  position: absolute;
-  top: 0;
-  right: 18px;
-  width: 120px;
-  height: 30px;
+.photo--wide {
+  margin-bottom: 20px;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  justify-content: center;
+
+@media (min-width: @tablet-width) {
+  grid-column-start: 1;
+  grid-column-end: -1;
+  margin-top: 0;
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  }
+
+  @media (min-width: @desktop-width) {
+  grid-column-start: 1;
+  grid-column-end: -1;
+  margin-top: 0;
+  }
+}
+.gallery__stiker {
   background-color: @pink;
+  font-family: inherit;
   color: @basic-white;
-  font-size: 12px;
-  line-height: 24px;
-  font-weight: 700;
-  text-transform: uppercase;
-  padding-top: 7px;
-  padding-left: 19px;
-  padding-right: 11px;
+  padding: 13px 20px 14px 19px;
+  position: absolute;
+  right: 0;
+}
+
+.photo__link{
+ display: block;
+}
+
+.photo__link--wide
+.link__img--wide {
+  width: 100vw;
+}
+
+.link__img  {
+  display: block;
+  width: 100%;
 }
 
 .photo__content {
-  padding: 26px 17px 10px 26px;
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
+  font-size: 14px;
+  padding: 18px;
   background-color: @light-gray;
   color: @desaturated-blue;
 }
@@ -42,6 +85,7 @@
 .photo__text {
   font-size: 14px;
   line-height: 24px;
+  margin-bottom: auto;
 }
 
 .photo__likes {
@@ -69,3 +113,22 @@
 .photo__like-text {
   margin-left: 48px;
 }
+.gallery {
+  overflow: hidden;
+}
+.gallery__container {
+@media (min-width: @tablet-width) {
+ display: grid;
+ grid-template-columns: 1fr 1fr;
+column-gap: 20px;
+
+  }
+
+@media (min-width: @desktop-width) {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  column-gap: 20px;
+  grid-row-gap: 54px;
+  }
+}
+

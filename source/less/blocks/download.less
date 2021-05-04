@@ -2,10 +2,12 @@
   @media (min-width: @tablet-width) {
     padding-left: 20px;
     position: relative;
+    margin-right: 390px;
  }
   @media (min-width: @desktop-width) {
     padding-left: 130px;
     position: relative;
+    max-width: 390px;
   }
 }
 
@@ -13,10 +15,12 @@
   font-size: 24px;
   line-height: 29px;
   font-weight: 300;
-  align-items: center;
+text-align: center;
   display: block;
-  padding-top: 90px;
-  margin-bottom: 400px;
+  padding-top: 96px;
+  margin-bottom: 347px;
+  margin-left: 20px;
+  width: 280px;
   @media (min-width: @tablet-width) {
     font-size: 40px;
     line-height: 48px;
@@ -26,20 +30,20 @@
     }
 
   @media (min-width: @desktop-width) {
+        padding-top: 224px;
     font-size: 50px;
     line-height: 68px;
   }
 }
 
 .download__app {
-  margin-left: -20px;
-  margin-right: -20px;
   padding-left: 20px;
   padding-right: 20px;
   background-color: @dark-blue;
 
     @media (min-width: @tablet-width) {
 background-color: transparent;
+padding-bottom: 106px;
     }
   @media (min-width: @desktop-width) {
 background-color: transparent;
@@ -69,25 +73,47 @@ background-color: transparent;
 
   @media (min-width: @desktop-width) {
     font-size: 21px;
+     margin-top: 59px;
   }
 }
 
 .download__list {
-  margin: 0;
-  list-style: none;
   display: flex;
-  padding: 38px 0 31px;
-}
+  list-style: none;
+justify-content: space-around;
+    align-items: flex-end;
+    padding-left: 22px;
+    padding-right: 22px;
+    min-height: 60px;
+    padding-bottom: 16px;
 
-.download__item {
-  margin: 0 35px;
+    @media (min-width: @tablet-width) {
+   margin-top: 39px;
+  }
+
+  @media (min-width: @desktop-width) {
+    font-size: 21px;
+     margin-top: 59px;
+     padding-left: 0px;
+    padding-right: 80px;
+  }
 }
 
 .download__text {
-  margin: 0;
+  margin: 0 auto;
   padding: 0;
   max-width: 230px;
   font-size: 14px;
   line-height: 24px;
   text-align: center;
+  margin-top: 31px;
+
+  @media (min-width: @tablet-width) {
+    font-size: 18px;
+    margin-top: 42px;
+  }
+    @media (min-width: @desktop-width) {
+    margin-top: 59px;
+    margin-left: 25px;
+  }
 }

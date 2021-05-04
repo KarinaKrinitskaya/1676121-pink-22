@@ -1,11 +1,13 @@
 .intro {
-  min-height: 632px;
+  min-height: 180px;
   background-color: transparent;
   background-image: url(../img/back-mobile.jpg);
   background-repeat: no-repeat;
   background-color: @desaturated-blue;
   color: @basic-white;
-  background-size: auto;
+  background-size: 100%;
+  padding: 70px 40px 47px;
+
 
   @media (min-width: @tablet-width) {
   background-image: url(../img/back-tablet.jpg);
@@ -25,6 +27,7 @@
 
 }
 
+
 .intro__title {
   margin: 0 auto;
   font-size: 24px;
@@ -35,5 +38,9 @@
   @media (min-width: @tablet-width){
   font-size: 50px;
   line-height: 69px;
+      padding: 58px 40px 47px;
   }
 }
+  @media (min-width: @desktop-width) {
+  padding: 72px 0 77px;
+  }

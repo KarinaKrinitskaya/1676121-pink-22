@@ -1,15 +1,56 @@
-.upload {
-  padding: 20px 0 34px;
+.upload__container  {
   background-color: @light-gray;
+  @media (min-width: @desktop-width) {
+    padding-top: 57px;
+   padding-left: 80px;
+    padding-right: 90px;
+    padding-bottom: 57px;
+  }
+}
+.upload {
+   background-color: @light-gray;
+
+   @media (min-width: @desktop-width) {
+  padding: 0;
+  }
 }
 
-.upload__container {
-  width: 280px;
-  margin: 0 auto;
+.upload__content{
+  @media (min-width: @tablet-width) {
+display: grid;
+grid-template-columns: 300px 260px;
+column-gap: 90px;
+
+  }
+
+  @media (min-width: @desktop-width) {
+display: grid;
+grid-template-columns: 300px 410px;
+  }
+}
+
+.ubload__img img{
+  width: 100%;
+}
+.upload__tools{
+ display: flex;
+flex-direction: column;
 }
 
 .upload__list {
+  margin-top: 30px;
+  display: flex;
   position: relative;
+  padding: 0;
+
+  @media (min-width: @tablet-width) {
+display: block;
+  margin-top: 70px;
+  }
+
+  @media (min-width: @desktop-width) {
+display: block;
+  }
 }
 
 .upload__bar {
@@ -48,6 +89,7 @@
   background-repeat: no-repeat;
   height: 44px;
   width: 44px;
+
 }
 
 .upload__controls--fill::before {
@@ -55,8 +97,12 @@
   position: absolute;
   background-image: url(../img/fill.svg);
   background-repeat: no-repeat;
-  height: 44px;
-  width: 44px;
+  height: 48px;
+  width: 43px;
+  left: 136px;
+     @media (min-width: @tablet-width) {
+    left: 0px;
+  }
 }
 
 .upload__controls--contrast::before {
@@ -64,13 +110,34 @@
   position: absolute;
   background-image: url(../img/contrast.svg);
   background-repeat: no-repeat;
-  height: 44px;
-  width: 44px;
+  height: 32px;
+  width: 32px;
+  left: 219px;
+
+    @media (min-width: @tablet-width) {
+    left: 0px;
+  }
+}
+
+.upload__btns {
+    display: flex;
+    flex-direction: column;
+    margin-top: auto;
+  @media (min-width: @tablet-width) {
+
+  }
+
+  @media (min-width: @desktop-width) {
+    flex-direction: row;
+    justify-content: space-between;
+    margin-left: 0;
+    margin-right: 0;
+
+  }
 }
 
 .upload__btn {
   font-family: inherit;
-  width: 280px;
   border-radius: 25px;
   color: @pink;
   background-color: transparent;
@@ -80,5 +147,11 @@
   text-decoration: none;
   cursor: pointer;
   border: 3px solid @pink;
+  margin-bottom: 12px;
+
+
+@media (min-width: @tablet-width) {
+  margin-bottom: 24px;
+  }
 }
 
