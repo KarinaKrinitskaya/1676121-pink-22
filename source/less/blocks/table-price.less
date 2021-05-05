@@ -1,19 +1,54 @@
-.table-price {
+
+.table-price__cell {
   padding-top: 17px;
   padding-bottom: 21px;
-  border: 2px solid @light-gray;
+  border: 2px solid @borders-color;
   font-size: 18px;
   color: @basic-black;
   background-color: @basic-white;
+  margin: 0;
+  padding: 0;
+  border-collapse: collapse;
+    border-spacing: 2px;
+    padding: inherit;
+    padding: 14px 21px 15px;
+}
+.table-price {
+  padding-top: 17px;
+  padding-bottom: 21px;
+  border: 2px solid @borders-color;
+  font-size: 18px;
+  color: @basic-black;
+  background-color: @basic-white;
+  margin: 0;
+  padding: 0;
+  border-collapse: collapse;
+    border-spacing: 2px;
+    padding: inherit;
+  background: transparent;
+
+}
+
+.table-price--hidden {
+  @media (min-width: @tablet-width) {
+    background-color: transparent;
+    border: none;
+    opacity: 0;
+height: 0;
+visibility: hidden;
+
+  }
 }
 
 .table-price__header {
   padding-top: 17px;
   padding-bottom: 21px;
-  border: 2px solid @light-gray;
+  border: 2px solid @borders-color;
   font-size: 18px;
   color: @basic-white;
   background-color: @desaturated-blue;
+  position: relative;
+  overflow: hidden;
 }
 
 .table-price__type,
@@ -31,9 +66,37 @@
 }
 
 .table-price__item {
+
   display: flex;
   justify-content: space-between;
   align-items: center;
   font-weight: 400;
 
+}
+.table-price__type--hit::after{
+   content: "Хит";
+    width: 100px;
+    height: 30px;
+    font-size: 14px;
+    line-height: 30px;
+    position: absolute;
+    top: 0px;
+    left: -33px;
+    transform: rotate(-45deg);
+    text-align: center;
+    text-transform: uppercase;
+    background-color: @pink;
+    color: @basic-white;
+  }
+
+.table-price__cell--yes {
+  background-image: url(../img/yes.svg);
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.table-price__cell--no {
+    background-image: url(../img/no.svg);
+  background-repeat: no-repeat;
+  background-position: center;
 }

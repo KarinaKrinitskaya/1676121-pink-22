@@ -8,14 +8,16 @@
   </head>
   <body class="page__body">
     <header class="page-header">
-      <div class="page-header__container">
-      <a class="page-header__logo logo">
+      <div class="page-header__container page-header__container--open">
+        <div class="page-header__logo">
+      <a class="logo">
         <img class="logo__header logo__header--mobile" src="img/pink-logo-mobile.svg" width="74" height="23" alt="Логотип сайта Пинк">
         <img class="logo__header logo__header--tablet" src="img/logotype-white-tablet.svg" width="145" height="40" alt="Логотип сайта Пинк">
         <img class="logo__header logo__header--desktop" src="img/logotype-white-desktop.svg" width="147" height="40" alt="Логотип сайта Пинк">
       </a>
-      <nav class="main-nav">
-        <button class="main-nav__toggle" type="button"><span class="toggle__burger"></span></button>
+      <button class="main-nav__toggle" type="button"><span class="toggle toggle__burger toggle__cross"></span></button>
+    </div>
+      <nav class="main-nav main-nav--show main-nav--closed">
         <div class="main-nav__container">
           <ul class="main-nav__list">
             <li class="main-nav__list__item">
@@ -143,13 +145,13 @@
         <div class="price__container slider container">
           <table class="price__table table-price">
             <tr>
-              <th class="table-price"></th>
+              <th class="table-price table-price--hidden"></th>
               <th class="table-price__header">
                 <span class="table-price__type">База</span>
                 <span class="table-price__price">1,99 USD</span>
               </th>
               <th class="table-price__header">
-                <span class="table-price__type">Стандарт</span>
+                <span class="table-price__type table-price__type--hit">Стандарт</span>
                 <span class="table-price__price">3,99 USD</span>
               </th>
               <th class="table-price__header">
@@ -158,28 +160,28 @@
               </th>
             </tr>
             <tr>
-              <th class="table-price">
+              <th class="table-price__cell">
                 <span class="table-price__item">Розовый фильтр</span>
               </th>
-              <th class="table-price"></th>
-              <th class="table-price"></th>
-              <th class="table-price"></th>
+              <th class="table-price__cell table-price__cell--yes"></th>
+              <th class="table-price__cell table-price__cell--yes"></th>
+              <th class="table-price__cell table-price__cell--yes"></th>
             </tr>
             <tr>
-              <th class="table-price">
+              <th class="table-price__cell">
                 <span class="table-price__item">Смайлики</span>
               </th>
-              <th class="table-price"></th>
-              <th class="table-price"></th>
-              <th class="table-price"></th>
+              <th class="table-price__cell table-price__cell--no"></th>
+              <th class="table-price__cell table-price__cell--yes"></th>
+              <th class="table-price__cell table-price__cell--yes"></th>
             </tr>
             <tr>
-              <th class="table-price">
+              <th class="table-price__cell">
                 <span class="table-price__item">Комментарии</span>
               </th>
-              <th class="table-price"></th>
-              <th class="table-price"></th>
-              <th class="table-price"></th>
+              <th class="table-price__cell table-price__cell--no"></th>
+              <th class="table-price__cell table-price__cell--no"></th>
+              <th class="table-price__cell table-price__cell--yes"></th>
             </tr>
           </table>
           <p class="toggles slider__toggles">

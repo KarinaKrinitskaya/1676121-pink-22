@@ -92,6 +92,7 @@
   background-position: 40% 170px;
   background-size: 157px auto;
   padding-bottom: 318px;
+  z-index: 1;
   }
 }
 
@@ -112,8 +113,20 @@
   background-repeat: no-repeat;
   background-position: 40% 170px;
   background-size: 157px auto;
-  padding-bottom: 318px;
+  padding-bottom: 320px;
   }
 }
 
-
+.features__text::after {
+content: "";
+    position: absolute;
+    margin: auto;
+    top: auto;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    width: 157px;
+    height: 278px;
+    background: url(../img/iphone screen-smile.png);
+    background-size: 157px auto;
+}
