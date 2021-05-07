@@ -13,7 +13,6 @@
   background-size: 100%;
   color: @basic-white;
   background-color: @dark-blue;
-  min-height: 632px;
 
  }
 
@@ -22,7 +21,6 @@
   background-image: url(../img/back-tablet.jpg);
   background-repeat: no-repeat;
   background-size: 100%;
-  min-height: 660px;
     }
   }
 
@@ -31,94 +29,8 @@
     background-image: url(../img/back-desktop.jpg);
     background-repeat: no-repeat;
     background-size: 100%;
-    min-height: 650px;
     }
   }
-
- .page-main__download::before {
-  background-image: url(../img/phone.png);
-  content: "";
-  position: absolute;
-  width: 286px;
-  height: 320px;
-  background-repeat: no-repeat;
-  margin-top: 215px;
-}
-
-@media (min-width: @tablet-width) {
- .page-main__download::before {
-    background-image: url(../img/phone-tablet.png);
-    background-repeat: no-repeat;
-    content: "";
-    position: absolute;
-    width: 660px;
-    height: 545px;
-    left: 0;
-    bottom: 0px;
-    }
-  }
-
-@media (min-width: @desktop-width) {
- .page-main__download::before {
-    background-image: url(../img/phone-desktop.png);
-    background-repeat: no-repeat;
-    content: "";
-    position: absolute;
-    width: 1050px;
-    height: 645px;
-    bottom: 0px;
-    left: 280px;
-    }
-  }
-
-.download__container {
-  margin-left: auto;
-  margin-right: auto;
-  padding-left: 20px;
-  padding-right: 20px;
-  max-width: 480px;
-}
-
-@media (min-width: @tablet-width) {
-  .download__container {
-    margin-left: 20px;
-    margin-right: 340px;
-    max-width: 800px;
-  }
-}
-
- .download__container::before {
-  background-image: url(../img/screen-mobile.svg);
-  content: "";
-  position: absolute;
-  width: 111px;
-  height: 197px;
-  background-repeat: no-repeat;
-  top: 248px;
-  left: 103px;
-
-  @media (min-width: @tablet-width) {
-  background-image: url(../img/screen-tablet.svg);
-  content: "";
-  position: absolute;
-  width: 195px;
-  height: 346px;
-  background-repeat: no-repeat;
-  top: 190px;
-  left: 333px;
-  }
-
-   @media (min-width: @desktop-width) {
-  background-image: url(../img/screen-desktop.png);
-  content: "";
-  position: absolute;
-  width: 230px;
-  height: 408px;
-  background-repeat: no-repeat;
-  top: 384px;
-  left: 623px;
-  }
-}
 
 .page-main__slogan {
   margin-left: auto;
