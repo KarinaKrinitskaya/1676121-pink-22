@@ -1,0 +1,41 @@
+.map__mobile {
+  width: 100%;
+}
+
+.map__tablet{
+  display: none;
+}
+.map__desktop {
+  display: none;
+}
+
+@media (min-width: @tablet-width) {
+  .map__mobile {
+      display: none;
+    }
+
+    .map__tablet {
+      display: block;
+      width: 100%;
+    }
+
+    .map__desktop {
+      display: none;
+    }
+  }
+
+@media (min-width: @desktop-width) {
+
+  .map__mobile {
+      display: none;
+    }
+
+    .map__tablet {
+      display: none;
+    }
+
+    .map__desktop {
+      display: block;
+      width: 100%;
+    }
+  }

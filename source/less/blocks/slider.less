@@ -1,13 +1,10 @@
 .slider__toggles {
-justify-content: center;
-display: flex;
-margin-top: 45px;
-@media (min-width: @tablet-width) {
-display: none;
-  }
+  justify-content: center;
+  display: flex;
+  margin-top: 45px;
 
-  @media (min-width: @desktop-width) {
-display: none;
+ @media (min-width: @desktop-width) {
+  display: none;
   }
 }
 
@@ -20,4 +17,10 @@ display: none;
   background-color: @light-gray;
   border-radius: 50%;
 
+}
+
+.toggles {
+ @media (min-width: @tablet-width) {
+  display: none;
+  }
 }
