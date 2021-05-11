@@ -31,7 +31,8 @@
   @media (min-width: @desktop-width) {
   position: absolute;
     display: block;
-    margin-top: 10px;
+    margin-top: -66px;
+    left: 13px;
     width: 28px;
     height: 42px;
     top: 50%;
@@ -39,25 +40,16 @@
     border: none;
     outline: none;
     cursor: pointer;
+    background-image: url(../img/left-arrow.svg);
+    background-repeat: no-repeat;
   }
 }
-.review__prev::before {
-  content: "";
-    position: absolute;
-    top: -66px;
-    left: -75px;
-    width: 28px;
-    height: 28px;
-    border-top: 3px solid @basic-black;
-    border-right: 3px solid @basic-black;
-    transform: rotate(-135deg);
-    opacity: 0.3;
-}
+
 .review__next {
   @media (min-width: @desktop-width) {
     position: absolute;
     display: block;
-    margin-top: 10px;
+    margin-top: -66px;
     width: 28px;
     height: 42px;
     top: 50%;
@@ -65,21 +57,10 @@
     border: none;
     outline: none;
     cursor: pointer;
-    right: 5px;
+    right: -20px;
+    background-image: url(../img/right-arrow.svg);
+    background-repeat: no-repeat;
 }
-}
-
-.review__next::before {
-  content: "";
-    position: absolute;
-    left: 5px;
-    top: -66px;
-    width: 28px;
-    height: 28px;
-    border-top: 3px solid @basic-black;
-    border-right: 3px solid @basic-black;
-    transform: rotate(45deg);
-    opacity: 0.3;
 }
 
 .review__list {

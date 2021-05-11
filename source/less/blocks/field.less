@@ -1,19 +1,62 @@
 .field__label {
   display: block;
-  padding-left: 23px;
+  padding-left: 13px;
   font-size: 14px;
   line-height: 30px;
   color: @pink;
   text-transform: uppercase;
 }
-
+.field__label--name {
+  @media (min-width: @tablet-width) {
+  display: inline-block;
+  vertical-align: top;
+  padding: 10px 20px 10px 0;
+  }
+}
 .field__input {
   box-sizing: border-box;
   width: 100%;
-  padding: 19px;
   border: 2px solid @borders-color;
+    padding: 14px 60px 15px 21px;
+    font-size: 18px;
+    line-height: 30px;
+    font-weight: 400;
+    color: @desaturated-blue;
+    border: 2px solid @borders-color;
+    border-radius: 5px;
+    outline: none;
 }
 
+.contest__field--contacts::after {
+  @media (min-width: @tablet-width) {
+    content: "";
+  width: 59px;
+    height: 59px;
+    position: absolute;
+    margin: auto;
+    top: -40px;
+    bottom: 0;
+    left: auto;
+    right: 1px;
+    background: @borders-color url(../img/mail-contacts-icon.svg) no-repeat center;
+    cursor: pointer;
+  }
+}
+.contest__field--contacts:nth-child(2)::after {
+  @media (min-width: @tablet-width) {
+    content: "";
+  width: 59px;
+    height: 59px;
+    position: absolute;
+    margin: auto;
+    top: -40px;
+    bottom: 0;
+    left: auto;
+    right: 1px;
+    background: @borders-color url(../img/phone-contact-icon.svg) no-repeat center;
+    cursor: pointer;
+  }
+}
 .fields-frame__legend {
   display: block;
   text-align: center;
@@ -21,4 +64,15 @@
   line-height: 18px;
   color: @pink;
   text-transform: uppercase;
+  padding: 45px 14px 0;
+  @media (min-width: @tablet-width) {
+   padding: 0 20px;
+
+  }
+}
+.fields-frame__legend--hidden{
+  display: none;
+  @media (min-width: @tablet-width) {
+   display: block;
+  }
 }
