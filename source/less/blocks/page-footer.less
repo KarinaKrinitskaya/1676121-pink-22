@@ -3,7 +3,7 @@
   flex-direction: column;
   align-items: center;
   width: 100%;
-  padding-top: 40px;
+  padding-top: 30px;
   padding-bottom: 40px;
 
   @media (min-width: @tablet-width){
@@ -26,7 +26,10 @@
   flex-wrap: wrap;
   align-items: center;
   padding: 0;
-
+  padding-top: 35px;
+     @media (min-width: @tablet-width){
+  padding-top: 0;
+}
 }
 
 .social {
@@ -41,6 +44,8 @@
 .page-footer__copyright {
 display: flex;
     justify-content: flex-end;
-  margin-top: -22px;
   padding: 0;
+   @media (min-width: @tablet-width){
+    align-items: center;
+  }
 }

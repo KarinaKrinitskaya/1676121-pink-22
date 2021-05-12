@@ -1,40 +1,45 @@
 .research {
   display: none;
 
-  @media (min-width: @tablet-width){
-    display: block;
+ @media (min-width: @tablet-width) {
+  display: block;
   }
 
-  @media (min-width:  @desktop-width){
-    background-color: @light-gray;
+ @media (min-width:  @desktop-width){
+  background-color: @light-gray;
   }
 }
 
 .research__container {
-  width: 660px;
   margin: 0 auto;
   position: relative;
   display: flex;
-  }
 
-.research__image {
-  width: 290px;
-  height: 330px;
-  background-image: url(../img/diagram-fill.svg),url(../img/timer.svg);
-  background-repeat: no-repeat;
-  background-position: 20px 112px,0 56px;
-  background-size: 199px 199px,241px 274px;
+ @media (min-width:  @desktop-width){
+  padding: 127px 0 60px;
+  }
 }
 
-.research__image::after {
-  position: absolute;
-  content: "24";
-  font-size: 96px;
-  line-height: 96px;
-  font-weight: 700;
-  color: @pink;
-  top: 220px;
-  left: 100px;
+.research__container::before {
+ @media (min-width: @tablet-width){
+  background: url(../img/timer.svg) no-repeat center;
+  background-size: cover;
+  content: "";
+  width: 238px;
+  height: 276px;
+  margin-top: 60px;
+  margin-left:40px ;
+  }
+
+ @media (min-width:  @desktop-width){
+  background: url(../img/timer.svg) no-repeat center;
+  background-size: cover;
+  content: "";
+  width: 298px;
+  height: 345px;
+  margin-top: -60px;
+  margin-left:4px
+  }
 }
 
 .research__aside {
@@ -43,6 +48,12 @@
   padding-top: 62px;
   padding-bottom: 109px;
   padding-left: 17px;
+
+ @media (min-width:  @desktop-width){
+  width: 512px;
+  padding-top: 0;
+  padding-bottom: 0;
+  }
 }
 
 .research__title {
@@ -50,6 +61,10 @@
   line-height: 36px;
   margin-bottom: 10px;
   width: 168px;
+
+ @media (min-width:  @desktop-width){
+  width: auto;
+  }
 }
 
 .research__text {
@@ -57,6 +72,11 @@
   line-height: 24px;
   margin-top: 24px;
   margin-bottom: 24px;
+
+ @media (min-width:  @desktop-width){
+  font-size: 18px;
+  line-height: 30px;
+  }
 }
 
 .research__link {
@@ -64,4 +84,9 @@
   line-height: 24px;
   color: @pink;
   text-decoration: underline;
+
+ @media (min-width:  @desktop-width){
+  font-size: 18px;
+  line-height: 30px;
+  }
 }
