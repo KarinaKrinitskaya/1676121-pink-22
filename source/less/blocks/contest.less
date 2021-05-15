@@ -35,6 +35,21 @@
   }
 }
 
+.slogan__gallery {
+   padding-bottom: 50px;
+   @media (min-width: @tablet-width) {
+  padding: 92px 0 76px;
+  }
+}
+
+.slogan__slogan-block:first-child{
+ padding-bottom: 15px;
+}
+
+.slogan-block{
+  padding: 49px 0 41px;
+}
+
 .slogan__hidden {
   display: none;
 
@@ -227,19 +242,13 @@
   border-radius: 5px;
 }
 
-.checkbox__label::after {
-  content: "";
-  position: absolute;
-  margin: auto;
-  top: 16px;
-  bottom: 0;
-  left: -5px;
-  right: auto;
+.contest__input--checkbox:checked + label::before {
+  background-image: url(../img/tick.svg);
+  background-position: center;
+  background-repeat: no-repeat;
+  display: block;
   width: 35px;
   height: 35px;
-  background: @basic-white;
-  background: url(../img/tick.svg);
-  background-repeat: no-repeat;
 }
 
 .contest__radio {
@@ -296,8 +305,8 @@ position: relative;
 }
 
 .radio::after{
-content: "";
-    position: absolute;
+  content: "";
+  position: absolute;
     margin: auto;
     top: 0;
     bottom: 0;
@@ -308,6 +317,14 @@ content: "";
     z-index: 10;
     background: @pink;
     border-radius: 50%;
+}
+.contest__app--radio:checked + label::before {
+  background-image: url(../img/ellipse-radio.svg);
+  background-position: center;
+  background-repeat: no-repeat;
+  display: block;
+  width: 15px;
+  height: 15px;
 }
 
 .contest__review {
