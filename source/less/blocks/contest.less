@@ -139,6 +139,15 @@
     width: 100%;
   }
 }
+.contest__block{
+  @media (min-width: @tablet-width) {
+  display: flex;
+    padding: 45px 60px 0;
+    justify-content: space-between;
+    flex-wrap: wrap;
+  }
+
+}
 
 .contest__contacts-data {
   width: 100%;
@@ -159,14 +168,6 @@
   padding-top: 23px;
   padding-bottom: 15px;
   @media (min-width: @tablet-width) {
-    padding: 45px 60px 0;
-  }
-
-  @media (min-width: @desktop-width) {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between;
-  padding: 43px 60px 2px;
   }
 }
 
@@ -178,6 +179,10 @@
  position: relative;
 
   }
+  @media (min-width: @desktop-width) {
+     width: 375px;
+  }
+
 }
 
 .field__label--contacts{
@@ -233,7 +238,7 @@
   margin: auto;
   top: 0;
   bottom: 0;
-  left: -13px;
+  left: 0;
   right: auto;
   width: 35px;
   height: 35px;
@@ -275,21 +280,52 @@
 }
 
 .radio {
-position: relative;
-    display: block;
- margin: 38px auto 45px;
-    padding-left: 70px;
-    font-size: 18px;
-    line-height: 30px;
-    font-weight: 400;
-    color: @desaturated-blue;
-    cursor: pointer;
-    @media (min-width: @tablet-width) {
-
-  }
+  position: relative;
+  display: block;
+  margin: 38px auto 45px;
+  padding-left: 70px;
+  font-size: 18px;
+  line-height: 30px;
+  font-weight: 400;
+  color: @desaturated-blue;
+}
+.contest__app--radio {
+  cursor: none;
+}
+.radio__label, .radio__label:before, .radio__label:after {
+  cursor: pointer;
+}
+.contest__app--radio + .radio__label:before {
+  content: "";
+  position: absolute;
+  margin: auto;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: auto;
+  width: 35px;
+  height: 35px;
+  background: @basic-white;
+  border: 2px solid @borders-color;
+  border-radius: 50%;
 }
 
-.radio::before {
+.contest__app--radio:checked + .radio__label:after {
+  display: block;
+  content: "";
+  position: absolute;
+  margin: auto;
+  top: 0;
+  bottom: 0;
+  left: 12px;
+  right: auto;
+  width: 15px;
+  height: 15px;
+  background: @pink;
+  border-radius: 50%;
+}
+
+.radio__label::before {
   content: "";
     position: absolute;
     margin: auto;
@@ -302,29 +338,6 @@ position: relative;
     background: @basic-white;
     border: 2px solid @borders-color;
     border-radius: 50%;
-}
-
-.radio::after{
-  content: "";
-  position: absolute;
-    margin: auto;
-    top: 0;
-    bottom: 0;
-    left: 12px;
-    right: auto;
-    width: 15px;
-    height: 15px;
-    z-index: 10;
-    background: @pink;
-    border-radius: 50%;
-}
-.contest__app--radio:checked + label::before {
-  background-image: url(../img/ellipse-radio.svg);
-  background-position: center;
-  background-repeat: no-repeat;
-  display: block;
-  width: 15px;
-  height: 15px;
 }
 
 .contest__review {

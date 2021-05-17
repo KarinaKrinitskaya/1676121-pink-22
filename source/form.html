@@ -113,6 +113,7 @@
             <div class="container">
               <fieldset class="contest__fields fields-frame contest__fields--contacts">
                 <legend class="fields-frame__legend fields-frame__legend--hidden">Контактная информация</legend>
+                <div class="contest__block contest__block--fields">
                 <div class="contest__field contest__field--contacts field">
                   <label class="field__label field__label--contacts" for="phone">Номер телефона</label>
                   <input class="field__input fieid__input--phone" type="tel" id="phone" name="phone" placeholder="Номер,пожалуйста">
@@ -121,6 +122,7 @@
                   <label class="field__label field__label--contacts" for="email">Адрес почты</label>
                   <input class="field__input field__input--email" type="tel" id="email" name="email" required placeholder="Введите почту *">
                 </div>
+              </div>
               </fieldset>
             </div>
           </div>
@@ -130,15 +132,15 @@
                 <legend class="fields-frame__legend">С каким приложением путешествовали?</legend>
                 <ul class="contest__app-list">
                   <li class="radio">
-                    <input class="visually-hidden contest__app--radio" type="radio" id="iOS" name="app" value="iOS" checked>
+                    <input class="visually-hidden contest__app--radio" type="radio" id="iOS" name="app" value="iOS" for="iOS" checked>
                     <label class="radio__label" for="iOs">Pink для iOS</label>
                   </li>
                   <li class="radio">
-                    <input class="visually-hidden" type="radio" id="Android" name="app" value="Android">
+                    <input class="visually-hidden contest__app--radio" type="radio" id="Android" name="app" value="Android">
                     <label class="radio__label" for="Android">Pink на Android</label>
                   </li>
                   <li class="radio">
-                    <input class="visually-hidden" type="radio" id="Windows" name="app" value="Windows">
+                    <input class="visually-hidden contest__app--radio" type="radio" id="Windows" name="app" value="Windows">
                     <label class="radio__label" for="Windows">Windows Phone</label>
                   </li>
                 </ul>
