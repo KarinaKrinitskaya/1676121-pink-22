@@ -21,7 +21,7 @@
           <div class="main-nav__container">
             <ul class="main-nav__list">
               <li class="main-nav__list__item">
-                <a>
+                <a href="index.html">
                   Главная
                 </a>
               </li>
@@ -82,27 +82,27 @@
                 <legend class="fields-frame__legend">Ваши безбашенные достижения в путешествии</legend>
                 <ul class="content__checkbox-list">
                   <li class="checkbox">
-                    <input class="visually-hidden" type="checkbox" id="selfie" name="achieve" value="selfie" checked>
+                    <input class="visually-hidden contest__input--checkbox" type="checkbox" id="selfie" name="achieve" value="selfie" checked>
                     <label class="checkbox__label" for="selfie">Сделал селфи с акулой</label>
                   </li>
                   <li class="checkbox">
-                    <input class="visually-hidden" type="checkbox" id="burn" name="achieve" value="burn" checked>
+                    <input class="visually-hidden contest__input--checkbox" type="checkbox" id="burn" name="achieve" value="burn" checked>
                     <label class="checkbox__label" for="burn">Обгорел на пляже</label>
                   </li>
                   <li class="checkbox">
-                    <input class="visually-hidden" type="checkbox" id="noris" name="achieve" value="noris">
+                    <input class="visually-hidden contest__input--checkbox" type="checkbox" id="noris" name="achieve" value="noris">
                     <label class="checkbox__label" for="noris">Видел Чака Норриса</label>
                   </li>
                   <li class="checkbox">
-                    <input class="visually-hidden" type="checkbox" id="souvenir" name="achieve" value="souvenir">
+                    <input class="visually-hidden contest__input--checkbox" type="checkbox" id="souvenir" name="achieve" value="souvenir">
                     <label class="checkbox__label" for="souvenir">Накупил сувениров</label>
                   </li>
                   <li class="checkbox">
-                    <input class="visually-hidden" type="checkbox" id="tower" name="achieve" value="tower" checked>
+                    <input class="visually-hidden contest__input--checkbox" type="checkbox" id="tower" name="achieve" value="tower" checked>
                     <label class="checkbox__label" for="tower">Удержал башню</label>
                   </li>
                   <li class="checkbox">
-                    <input class="visually-hidden" type="checkbox" id="destruction" name="achieve" value="destruction">
+                    <input class="visually-hidden contest__input--checkbox" type="checkbox" id="destruction" name="achieve" value="destruction">
                     <label class="checkbox__label" for="destruction">Разгромил отель</label>
                   </li>
                 </ul>
@@ -113,6 +113,7 @@
             <div class="container">
               <fieldset class="contest__fields fields-frame contest__fields--contacts">
                 <legend class="fields-frame__legend fields-frame__legend--hidden">Контактная информация</legend>
+                <div class="contest__block contest__block--fields">
                 <div class="contest__field contest__field--contacts field">
                   <label class="field__label field__label--contacts" for="phone">Номер телефона</label>
                   <input class="field__input fieid__input--phone" type="tel" id="phone" name="phone" placeholder="Номер,пожалуйста">
@@ -121,6 +122,7 @@
                   <label class="field__label field__label--contacts" for="email">Адрес почты</label>
                   <input class="field__input field__input--email" type="tel" id="email" name="email" required placeholder="Введите почту *">
                 </div>
+              </div>
               </fieldset>
             </div>
           </div>
@@ -130,15 +132,15 @@
                 <legend class="fields-frame__legend">С каким приложением путешествовали?</legend>
                 <ul class="contest__app-list">
                   <li class="radio">
-                    <input class="visually-hidden" type="radio" id="iOS" name="app" value="iOS" checked>
+                    <input class="visually-hidden contest__app--radio" type="radio" id="iOS" name="app" value="iOS" for="iOS" checked>
                     <label class="radio__label" for="iOs">Pink для iOS</label>
                   </li>
                   <li class="radio">
-                    <input class="visually-hidden" type="radio" id="Android" name="app" value="Android">
+                    <input class="visually-hidden contest__app--radio" type="radio" id="Android" name="app" value="Android">
                     <label class="radio__label" for="Android">Pink на Android</label>
                   </li>
                   <li class="radio">
-                    <input class="visually-hidden" type="radio" id="Windows" name="app" value="Windows">
+                    <input class="visually-hidden contest__app--radio" type="radio" id="Windows" name="app" value="Windows">
                     <label class="radio__label" for="Windows">Windows Phone</label>
                   </li>
                 </ul>
