@@ -30,7 +30,9 @@
 }
 
 .table-price--hidden {
+  display: none;
   @media (min-width: @tablet-width) {
+    display: table-cell;
     background-color: transparent;
     border: none;
     opacity: 0;
@@ -49,11 +51,15 @@ visibility: hidden;
   background-color: @desaturated-blue;
   position: relative;
   overflow: hidden;
+  text-transform: uppercase;
 }
 
 .table-price__type,
 .table-price__price {
   display: block;
+}
+.table-price__price {
+  font-weight: 300;
 }
 
 .table-price__type {

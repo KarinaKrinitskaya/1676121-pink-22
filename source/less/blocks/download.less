@@ -6,6 +6,11 @@
   background-color: @dark-blue;
   position: relative;
   z-index: 5;
+
+    @media (min-resolution: 2dppx) {
+      background-image: url(../img/back-mobile@2x.jpg);
+      background-size: 100%;
+    }
 }
 
 
@@ -14,6 +19,10 @@
   background-image: url(../img/back-tablet.jpg);
   background-repeat: no-repeat;
   background-size: 100%;
+
+    @media (min-resolution: 2dppx) {
+      background-image: url(../img/back-tablet@2x.jpg);
+    }
     }
   }
 
@@ -22,7 +31,12 @@
   background-image: url(../img/back-desktop.jpg);
   background-repeat: no-repeat;
   background-size: 100%;
+
+  @media (min-resolution: 2dppx) {
+      background-image: url(../img/back-desktop@2x.jpg);
     }
+    }
+
   }
 
 .download::after {
@@ -37,6 +51,10 @@
   right: 0;
   height: 645px;
 
+    @media (min-resolution: 2dppx) {
+      background-image: url(../img/hand-phone@2x.png);
+    }
+
 @media (min-width: @tablet-width) {
   background: url(../img/hand-phone-tablet.png) no-repeat bottom center;
   background-size: auto;
@@ -49,6 +67,9 @@
   right: 0;
   width: 660px;
   height: 545px;
+  @media (min-resolution: 2dppx) {
+      background-image: url(../img/hand-phone-tablet@2x.png);
+    }
  }
 
  @media (min-width: @desktop-width) {
@@ -63,6 +84,10 @@
   right: 0;
   width: 1050px;
   height: 645px;
+
+   @media (min-resolution: 2dppx) {
+      background-image: url(../img/hand-phone-desktop@2x.png);
+    }
   }
 }
 
@@ -142,7 +167,6 @@
   margin-left: auto;
   margin-right: auto;
 
-
  @media (min-width: @tablet-width) {
   margin-top: 39px;
   }
@@ -151,6 +175,16 @@
   font-size: 21px;
   margin-top: 0px;
   }
+}
+
+.download__button:hover {
+  background-color: @basic-white;
+  color: @pink;
+}
+
+.download__button:active {
+  background-color: @basic-white;
+  color: rgba(210, 40, 86, 1);
 }
 
 .download__list {

@@ -1,5 +1,8 @@
 .features {
+  background-image: url(../img/grey-background-mobile.png);
+  background-position:  top center;
   background-color:  @light-gray;
+  background-size: 100% auto;
   font-size: 14px;
   line-height: 24px;
 }
@@ -90,6 +93,10 @@
   width: 189px;
   height: 280px;
   background-size: 186px auto;
+
+  @media (min-resolution: 2dppx) {
+      background: url(../img/phone-gray@2.png) no-repeat top center;
+    }
   }
 }
 
@@ -117,6 +124,9 @@
   width: 189px;
   height: 280px;
   background-size: 186px auto;
+  @media (min-resolution: 2dppx) {
+      background: url(../img/phone-pink@2x.png) no-repeat top center;
+    }
   }
 }
 
@@ -137,6 +147,11 @@
   height: 278px;
   background-size: 157px auto;
 
+  @media (min-resolution: 2dppx) {
+      background: url(../img/iphone-screen-smile@2x.png) no-repeat top center;
+      background-size: 100%;
+    }
+
  @media (min-width: @tablet-width) {
   background: url(../img/phone-smile-tablet.png) no-repeat top center;
   content: "";
@@ -149,6 +164,10 @@
   width: 267px;
   height: 480px;
   background-size: cover;
+
+  @media (min-resolution: 2dppx) {
+      background: url(../img/phone-smile-tablet@2x.png) no-repeat top center;
+    }
   }
 
  @media (min-width: @desktop-width) {
@@ -163,6 +182,9 @@
   width: 189px;
   height: 300px;
   background-size: 186px auto;
+  @media (min-resolution: 2dppx) {
+      background: url(../img/iphone-screen-smile@2x.png) no-repeat top center;
+    }
   }
 }
 

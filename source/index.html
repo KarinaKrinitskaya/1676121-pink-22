@@ -5,15 +5,21 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>HTML Academy: Пинк</title>
     <link rel="stylesheet" href="css/style.css">
+    <link rel="icon" sizes="32x32" href="favicon-32.ico">
+    <link rel="icon" sizes="16x16" href="favicon-16.ico">
   </head>
   <body class="page__body">
     <header class="page-header">
       <div class="page-header__container page-header__container--open">
         <div class="page-header__logo">
           <a class="logo">
+            <picture>
+              <source media="(min-width: 1200px)" srcset="img/logotype-white-desktop.svg">
+              <source media="(min-width: 800px)" srcset="img/logotype-white-tablet.svg">
             <img class="logo__header logo__header--mobile" src="img/pink-logo-mobile.svg" width="74" height="23" alt="Логотип сайта Пинк">
             <img class="logo__header logo__header--tablet" src="img/logotype-white-tablet.svg" width="145" height="40" alt="Логотип сайта Пинк">
             <img class="logo__header logo__header--desktop" src="img/logotype-white-desktop.svg" width="147" height="40" alt="Логотип сайта Пинк">
+          </picture>
           </a>
           <button class="main-nav__toggle" type="button"><span class="toggle toggle__burger toggle__cross"></span></button>
         </div>
