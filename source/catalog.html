@@ -57,7 +57,11 @@
           <div class="gallery__container container">
             <figure class="photo photo--wide">
               <a class="photo__link photo__link--wide" href="#">
-                <img class="link__img link__img--wide" src="img/panorama-desktop.jpg" alt="Главное фото дня">
+                <picture>
+                <source media="(min-width: 940px)" srcset="img/panorama-desktop.jpg 1x, img/panorama-desktop@2x.jpg 2x">
+                <source media="(min-width: 800px)" srcset="img/img/panorama-tablet.jpg 1x, img/img/panorama-tablet@2x.jpg 2x">
+                <img class="link__img link__img--wide" src="img/panorama-mobile.jpg" srcset="img/panorama-mobile@2x.jpg 2x" alt="Главное фото дня">
+              </picture>
               </a>
               <span class="gallery__stiker">Панорама дня</span>
               <figcaption class="photo__content">
@@ -74,7 +78,11 @@
             </figure>
             <figure class="photo">
               <a class="photo__link" href="#">
-                <img class="link__img"  src="img/photo-1-levon.jpg" alt="Фото Левона">
+                <picture>
+                  <source media="(min-width: 940px)" srcset="img/photo-levon-desktop.jpg 1x, img/photo-levon-desktop@2x.jpg 2x">
+                  <source media="(min-width: 800px)" srcset="img/photo-levon-tablet.jpg 1x, img/photo-levon-tablet@2x.jpg 2x">
+                <img class="link__img"  src="img/photo-levon-mobile.jpg" srcset="img/photo-levon-mobile@2x.jpg 2x" alt="Фото Левона">
+              </picture>
               </a>
               <figcaption class="photo__content">
               <span class="photo__author">Левон</span>
@@ -88,7 +96,11 @@
             </figure>
             <figure class="photo">
               <a class="photo__link" href="#">
-                <img class="link__img"  src="img/photo-2-anton.jpg" alt="Фото Антона">
+                <picture>
+                  <source media="(min-width: 940px)" srcset="img/photo-anton-desktop.jpg 1x, img/photo-anton-desktop@2x.jpg 2x">
+                  <source media="(min-width: 800px)" srcset="img/photo-anton-tablet.jpg 1x, img/photo-anton-tablet@2x.jpg 2x">
+                <img class="link__img"  src="img/photo-anton-mobile.jpg" srcset="img/photo-anton-mobile@2x.jpg 2x" alt="Фото Антона">
+              </picture>
               </a>
               <figcaption class="photo__content">
               <span class="photo__author">Антон</span>
@@ -102,7 +114,11 @@
             </figure>
             <figure class="photo">
               <a class="photo__link" href="#">
-                <img class="link__img"  src="img/photo-3-boris.jpg" alt="Фото Бориса">
+                <picture>
+                  <source media="(min-width: 940px)" srcset="img/photo-boris-desktop.jpg 1x, img/photo-boris-desktop@2x.jpg 2x">
+                  <source media="(min-width: 800px)" srcset="img/photo-boris-tablet.jpg 1x, img/photo-boris-tablet@2x.jpg 2x">
+                <img class="link__img"  src="img/photo-boris-mobile.jpg" srcset="img/photo-boris-mobile@2x.jpg 2x" alt="Фото Бориса">
+              </picture>
               </a>
               <figcaption class="photo__content">
               <span class="photo__author">Борис</span>
@@ -116,7 +132,11 @@
             </figure>
             <figure class="photo">
               <a class="photo__link" href="#">
-                <img class="link__img" src="img/photo-4-sergei.jpg" alt="Фото Сергея">
+                <picture>
+                  <source media="(min-width: 940px)" srcset="img/photo-sergey-desktop.jpg 1x, img/photo-sergey-desktop@2x.jpg 2x">
+                  <source media="(min-width: 800px)" srcset="img/photo-sergey-tablet.jpg 1x, img/photo-sergey-tablet@2x.jpg 2x">
+                <img class="link__img" src="img/photo-sergey-mobile.jpg" srcset="img/photo-sergey-mobile@2x.jpg 2x" alt="Фото Сергея">
+              </picture>
               </a>
               <figcaption class="photo__content">
               <span class="photo__author">Сергей</span>
@@ -130,7 +150,11 @@
             </figure>
             <figure class="photo">
               <a class="photo__link" href="#">
-                <img class="link__img" src="img/photo-5-maxim.jpg" alt="Фото Максима">
+                <picture>
+                  <source media="(min-width: 940px)" srcset="img/photo-maxim-desktop.jpg 1x, img/photo-maxim-desktop@2x.jpg 2x">
+                  <source media="(min-width: 800px)" srcset="img/photo-maxim-tablet.jpg 1x, img/photo-maxim-tablet@2x.jpg 2x">
+                <img class="link__img" src="img/photo-maksim-mobile.jpg" srcset="img/photo-maxim-mobile@2x.jpg 2x" alt="Фото Максима">
+              </picture>
               </a>
               <figcaption class="photo__content">
               <span class="photo__author">Максим</span>
@@ -144,7 +168,11 @@
             </figure>
             <figure class="photo">
               <a class="photo__link" href="#">
-                <img class="link__img"  src="img/photo-6-nadejda.jpg" alt="Фото Надежды">
+                <picture>
+                  <source media="(min-width: 940px)" srcset="img/photo-nadejda-desktop.jpg 1x, img/photo-nadejda-desktop@2x.jpg 2x">
+                  <source media="(min-width: 800px)" srcset="img/photo-nadejda-tablet.jpg 1x, img/photo-nadejda-tablet@2x.jpg 2x">
+                <img class="link__img"  src="img/photo-nadejda-mobile.jpg" srcset="img/photo-nadejda-mobile@2x.jpg 2x" alt="Фото Надежды">
+              </picture>
               </a>
               <figcaption class="photo__content">
               <span class="photo__author">Надежда</span>
@@ -169,7 +197,10 @@
             <div class="upload__content">
               <h2 class="visually-hidden">Загрузка фотографий</h2>
               <div class="ubload__img">
-                <img src="img/photo-7-tablet.jpg" alt="">
+                <picture>
+                  <source media="(min-width: 800px)" srcset="img/photo-7-tablet.jpg 1x, img/photo-7-tablet@2x.jpg 2x">
+                <img src="img/photo-7-mobile.jpg" srcset="img/photo-7-mobile@2x.jpg 2x" alt="снежная дорога">
+                </picture>
               </div>
               <div class="upload__tools">
                 <div class="upload__list-block">
