@@ -86,3 +86,24 @@
   font-weight: lighter;
   color: @pink;
 }
+.contacts__link:hover {
+  color: @basic-black;
+}
+
+.contacts__link .contacts__link__underline {
+  display: block;
+  position: relative;
+  width: inherit;
+  height: 2px;
+  background: @basic-black;
+  bottom: 2px;
+  margin: 0 auto;
+  padding: 0;
+  opacity: 0;
+}
+.contacts__link:hover .contacts__link__underline {
+  opacity: 1;
+}
+.contacts__link:active .contacts__link__underline {
+  opacity: 0;
+}

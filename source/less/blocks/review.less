@@ -21,12 +21,28 @@
 .review__container{
   position: relative;
 }
-.review__prev{
-    display: none;
-  }
-.review__next {
+.review__prev {
   display: none;
 }
+.review__prev:hover {
+  filter: opacity(100%) sepia(0%) brightness(0%) contrast(100%);
+}
+
+.review__prev:active {
+  filter: opacity(30%);
+}
+
+.review__next {
+  display: none;
+ }
+
+.review__next:hover {
+  filter: opacity(100%) sepia(0%) brightness(0%) contrast(100%);
+}
+.review__next:active {
+  filter: opacity(30%);
+}
+
 .review__prev {
   @media (min-width: @desktop-width) {
   position: absolute;

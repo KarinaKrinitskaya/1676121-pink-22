@@ -26,6 +26,23 @@
     border-radius: 5px;
     outline: none;
 }
+.field__input::placeholder {
+  color: @desaturated-blue;
+}
+
+.field__input:hover {
+  color: @desaturated-blue;
+  border: 2px solid @desaturated-blue;
+}
+
+.field__input:active {
+  border: 2px solid @pink;
+}
+
+.field__input:focus {
+  border: 2px solid @pink;
+}
+
 
 .contest__field--contacts::after {
   @media (min-width: @tablet-width) {

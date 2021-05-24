@@ -255,6 +255,23 @@
   width: 35px;
   height: 35px;
 }
+.contest__input--checkbox:hover + label::before {
+  background-position: center;
+  background-repeat: no-repeat;
+  display: block;
+  width: 35px;
+  height: 35px;
+  border: 2px solid @desaturated-blue;
+}
+
+.contest__input--checkbox:active + label::before {
+  background-position: center;
+  background-repeat: no-repeat;
+  display: block;
+  width: 35px;
+  height: 35px;
+  border: 2px solid @pink;
+}
 
 .contest__radio {
   background-color: @light-gray;
@@ -307,6 +324,78 @@
   height: 35px;
   background: @basic-white;
   border: 2px solid @borders-color;
+  border-radius: 50%;
+}
+.contest__app--radio:hover + .radio__label:before {
+  content: "";
+  position: absolute;
+  margin: auto;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: auto;
+  width: 35px;
+  height: 35px;
+  background: @basic-white;
+  border: 2px solid @desaturated-blue;
+  border-radius: 50%;
+}
+.contest__app--radio + .radio__label:before {
+  content: "";
+  position: absolute;
+  margin: auto;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: auto;
+  width: 35px;
+  height: 35px;
+  background: @basic-white;
+  border: 2px solid @borders-color;
+  border-radius: 50%;
+}
+.contest__app--radio:active + .radio__label:before {
+  content: "";
+  position: absolute;
+  margin: auto;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: auto;
+  width: 35px;
+  height: 35px;
+  background: @basic-white;
+  border: 2px solid @pink;
+  border-radius: 50%;
+}
+
+.contest__app--radio:checked:hover + .radio__label:before {
+  content: "";
+  position: absolute;
+  margin: auto;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: auto;
+  width: 35px;
+  height: 35px;
+  background: @basic-white;
+  border: 2px solid @desaturated-blue;
+  border-radius: 50%;
+}
+
+.contest__app--radio:checked:active + .radio__label:before {
+  content: "";
+  position: absolute;
+  margin: auto;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: auto;
+  width: 35px;
+  height: 35px;
+  background: @basic-white;
+  border: 2px solid @pink;
   border-radius: 50%;
 }
 
@@ -421,6 +510,14 @@ margin-bottom: 0;
     width: 100%;
       padding: 0;
   }
+}
+
+.contest__button button {
+  background: @btn-green;
+}
+
+.contest__button button:hover {
+  background: @btn-green-hover;
 }
 
 .button {
