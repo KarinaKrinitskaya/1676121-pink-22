@@ -6,6 +6,7 @@
   background-color: @dark-blue;
   position: relative;
   z-index: 5;
+  min-height: 670px;
 
     @media (min-resolution: 2dppx) {
       background-image: url(../img/back-mobile@2x.jpg);
@@ -40,13 +41,13 @@
   }
 
 .download::after {
-  background: url(../img/hand-phone.png) no-repeat bottom center;
+  background: url(../img/hand-phone.png) no-repeat bottom left;
   background-size: auto;
   content: "";
   position: absolute;
   margin: auto;
   top: auto;
-  bottom: 250px;
+  bottom: 300px;
   left: 0;
   right: 0;
   height: 645px;
@@ -117,8 +118,8 @@
   display: block;
   padding-top: 96px;
   margin-bottom: 347px;
-  margin-left: 20px;
   width: 280px;
+  padding-left: 20px;
 
  @media (min-width: @tablet-width) {
   font-size: 40px;
@@ -138,6 +139,8 @@
 .download__app {
   background-color: @dark-blue;
   text-align: center;
+  width: 100%;
+  padding: 27px 0 28px;
 
  @media (min-width: @tablet-width) {
   background-color: transparent;
@@ -157,7 +160,7 @@
   border-radius: 29px;
   border: solid;
   border-width: 3px;
-  min-width: 280px;
+  min-width: 330px;
   min-height: 55px;
   font-weight: 700;
   font-size: 18px;
@@ -217,6 +220,7 @@
   line-height: 24px;
   text-align: center;
   padding-bottom: 28px;
+
 
  @media (min-width: @tablet-width) {
   font-size: 18px;

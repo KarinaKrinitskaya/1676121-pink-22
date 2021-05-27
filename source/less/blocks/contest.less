@@ -111,7 +111,7 @@
 }
 
 .contest__surname {
-
+padding-bottom: 44px;
   @media (min-width: @desktop-width){
   width: 46%;
     margin-bottom: 17px;
@@ -142,12 +142,12 @@
 }
 .contest__block{
   @media (min-width: @tablet-width) {
-  display: flex;
-    padding: 45px 60px 0;
+display: flex;
     justify-content: space-between;
-    flex-wrap: wrap;
   }
-
+@media (min-width: @desktop-width) {
+  display: flex;
+  }
 }
 
 .contest__contacts-data {
@@ -178,6 +178,7 @@
  flex-wrap: wrap;
  justify-content: space-between;
  position: relative;
+ margin: 10px;
 
   }
   @media (min-width: @desktop-width) {
