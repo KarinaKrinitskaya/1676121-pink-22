@@ -81,7 +81,7 @@
   margin: auto;
   top: auto;
   bottom: 0;
-  left: 160px;
+  left: 144px;
   right: 0;
   width: 1050px;
   height: 645px;
@@ -111,6 +111,7 @@
 }
 
 .download__title {
+  font-family: 'OpenSans';
   font-size: 24px;
   line-height: 29px;
   font-weight: 300;
@@ -131,8 +132,10 @@
 
  @media (min-width: @desktop-width) {
   padding-top: 208px;
+  padding-left: 10px;
   font-size: 50px;
-  line-height: 68px;
+  line-height: 69px;
+  margin-bottom: 35px;
   }
 }
 
@@ -140,7 +143,6 @@
   background-color: @dark-blue;
   text-align: center;
   width: 100%;
-  padding: 27px 0 28px;
 
  @media (min-width: @tablet-width) {
   background-color: transparent;
@@ -153,6 +155,7 @@
 }
 
 .download__button {
+  font-family: 'OpenSans';
   display: inline-block;
   color: @basic-white;
   border-color: @basic-white;
@@ -160,8 +163,8 @@
   border-radius: 29px;
   border: solid;
   border-width: 3px;
-  min-width: 330px;
-  min-height: 55px;
+  min-width: 300px;
+  min-height: 56px;
   font-weight: 700;
   font-size: 18px;
   padding: 16px 28px;
@@ -191,6 +194,11 @@
   color: rgba(210, 40, 86, 1);
 }
 
+.download__button span {
+  position: relative;
+  bottom: 3px;
+}
+
 .download__list {
   padding: 0;
   display: flex;
@@ -208,12 +216,27 @@
 
  @media (min-width: @desktop-width) {
   font-size: 21px;
-  margin-top: 59px;
+  margin-top: 67px;
   padding-left: 7px;
+      &.download__list li:nth-child(1){
+     padding-left: 22px;
+    }
+    &.download__list li:nth-child(2){
+      position: relative;
+      left: -5px;
+      bottom: 1px;
+    }
+    &.download__list li:nth-child(3){
+      position: relative;
+      left: -6px;
+      bottom: 3px;
+    }
   }
 }
 
+
 .download__text {
+  font-family: 'OpenSans';
   margin: 0;
   padding: 0;
   font-size: 14px;
@@ -224,10 +247,13 @@
 
  @media (min-width: @tablet-width) {
   font-size: 18px;
-  margin-top: -10px;
+  padding-bottom: 120px;
   }
 
  @media (min-width: @desktop-width) {
-  padding-bottom: 120px
+  padding-bottom: 120px;
+  font-size: 18px;
+  margin-top: -8px;
+  letter-spacing: -0.4px;
   }
 }

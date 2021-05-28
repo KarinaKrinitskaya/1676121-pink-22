@@ -1,0 +1,43 @@
+.slogan {
+  font-family: 'OpenSans';
+  margin: 0 auto;
+  font-size: 14px;
+  line-height: 30px;
+  color: @desaturated-blue;
+  text-align: center;
+  width: 290px;
+  padding-bottom: 30px;
+
+  @media (min-width: @tablet-width) {
+  font-size: 18px;
+  width: 500px;
+  }
+
+  @media (min-width: @desktop-width) {
+    min-width: 800px;
+  font-size: 18px;
+  }
+}
+
+.slogan__gallery {
+   padding-bottom: 50px;
+   @media (min-width: @tablet-width) {
+  padding: 92px 0 76px;
+  }
+}
+
+.slogan__slogan-block:first-child{
+ padding-bottom: 15px;
+}
+
+.slogan-block{
+  padding: 49px 0 41px;
+}
+
+.slogan__hidden {
+  display: none;
+
+  @media (min-width: @tablet-width) {
+  display: inline;
+  }
+}

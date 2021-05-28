@@ -121,6 +121,9 @@
   list-style: none;
   align-items: center;
   width: 100%;
+  margin-left: 174px;
+  margin-bottom: 18px;
+
   @media (min-width: @desktop-width) {
     display: flex;
   }
@@ -152,10 +155,14 @@
   border-bottom: 2px solid @basic-black;
   @media (min-width: @desktop-width) {
     border-bottom: none;
+    position: relative;
+    right: 33px;
+    min-width: 200px;
   }
 }
 
 .main-nav__list__item a {
+  font-family: 'OpenSans';
   position: relative;
   display: block;
   text-decoration: none;
@@ -165,6 +172,8 @@
   padding-bottom: 21px;
   font-weight: 700;
   text-align: center;
+  letter-spacing: 0.014em;
+
 }
 
 .main-nav__list__item a {
@@ -189,7 +198,9 @@
   }
 
   .main-nav__list__item {
-   margin-left: 80px;
+    position: relative;
+    bottom: 3px;
+    margin-right: 77px;
   }
 }
 

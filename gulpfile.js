@@ -15,7 +15,7 @@ const sync = require("browser-sync").create();
 
 // Styles
 
-const stylesSource = () => {
+const styles = () => {
   return gulp.src("source/less/style.less")
     .pipe(plumber())
     .pipe(sourcemap.init())
@@ -23,29 +23,13 @@ const stylesSource = () => {
     .pipe(postcss([
       autoprefixer()
     ]))
-    .pipe(rename("style.css"))
+    .pipe(rename("style.min.css"))
     .pipe(sourcemap.write("."))
-    .pipe(gulp.dest("source/css"))
+    .pipe(gulp.dest("build"))
     .pipe(sync.stream());
 };
 
-exports.stylesSource = stylesSource;
-
-const stylesBuild = () => {
-  return gulp.src("source/less/style.less")
-    .pipe(plumber())
-    .pipe(sourcemap.init())
-    .pipe(less())
-    .pipe(postcss([
-      autoprefixer()
-    ]))
-    .pipe(rename("style.css"))
-    .pipe(sourcemap.write("."))
-    .pipe(gulp.dest("build/css"))
-    .pipe(sync.stream());
-};
-
-exports.stylesBuild = stylesBuild;
+exports.styles = styles;
 
 // HTML
 
@@ -140,21 +124,7 @@ const clean = () => {
 
 // Server
 
-const serverSource = (done) => {
-  sync.init({
-    server: {
-      baseDir: 'source'
-    },
-    cors: true,
-    notify: false,
-    ui: false,
-  });
-  done();
-};
-
-exports.serverSource = serverSource;
-
-const serverBuild = (done) => {
+const server = (done) => {
   sync.init({
     server: {
       baseDir: 'build'
@@ -166,7 +136,7 @@ const serverBuild = (done) => {
   done();
 };
 
-exports.serverBuild = serverBuild;
+exports.server = server;
 
 // Reload
 
@@ -178,7 +148,7 @@ const reload = (done) => {
 // Watcher
 
 const watcher = () => {
-  gulp.watch("source/less/**/*.less", gulp.series("stylesSource"));
+  gulp.watch("source/less/**/*.less", gulp.series("styles"));
   gulp.watch("source/*.html").on("change", sync.reload);
   gulp.watch("source/*.html", gulp.series(html, reload));
 };
@@ -188,18 +158,32 @@ const watcher = () => {
 const build = gulp.series(
   clean,
   copy,
+  copyImages,
   optimizeImages,
   gulp.parallel(
-    stylesBuild,
+    styles,
     html,
     scripts,
     sprite,
     createWebp
-  ),
+  )
 );
 
 exports.build = build;
 
 exports.default = gulp.series(
-  stylesSource, serverSource, watcher
+  clean,
+  copy,
+  copyImages,
+  gulp.parallel(
+    styles,
+    html,
+    scripts,
+    sprite,
+    createWebp
+  ),
+  gulp.series(
+    server,
+    watcher
+  )
 );

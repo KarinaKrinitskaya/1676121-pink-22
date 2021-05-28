@@ -1,7 +1,4 @@
-
 .table-price__cell {
-  padding-top: 17px;
-  padding-bottom: 21px;
   border: 2px solid @borders-color;
   font-size: 18px;
   color: @basic-black;
@@ -9,13 +6,12 @@
   margin: 0;
   padding: 0;
   border-collapse: collapse;
-    border-spacing: 2px;
-    padding: inherit;
-    padding: 14px 21px 15px;
+  border-spacing: 2px;
+  padding: inherit;
+  padding: 14px 21px 15px;
+  height: 30px;
 }
 .table-price {
-  padding-top: 17px;
-  padding-bottom: 21px;
   border: 2px solid @borders-color;
   font-size: 18px;
   color: @basic-black;
@@ -23,8 +19,8 @@
   margin: 0;
   padding: 0;
   border-collapse: collapse;
-    border-spacing: 2px;
-    padding: inherit;
+  border-spacing: 2px;
+  padding: inherit;
   background: transparent;
 
 }
@@ -43,8 +39,6 @@ visibility: hidden;
 }
 
 .table-price__header {
-  padding-top: 17px;
-  padding-bottom: 21px;
   border: 2px solid @borders-color;
   font-size: 18px;
   color: @basic-white;
@@ -52,6 +46,8 @@ visibility: hidden;
   position: relative;
   overflow: hidden;
   text-transform: uppercase;
+  width: 233px;
+  height: 97px;
 }
 
 .table-price__type,
@@ -64,30 +60,52 @@ visibility: hidden;
 
 .table-price__type {
   font-weight: bold;
+  position: relative;
+  bottom: 5px;
+  font-family: 'OpenSans';
 }
 
 .table-price__price {
   font-size: 24px;
   font-weight: 300;
+  font-family: 'OpenSans';
 }
 
 .table-price__item {
-
+  font-family: 'OpenSans';
   display: flex;
   justify-content: space-between;
   align-items: center;
   font-weight: 400;
 
 }
+
+.table-price__type--hit::before{
+  content: "";
+  width: 118px;
+  height: 21px;
+  font-size: 14px;
+  line-height: 30px;
+  position: absolute;
+  top: 0px;
+  left: -33px;
+  transform: rotate(-45deg);
+  text-align: center;
+  text-transform: uppercase;
+  background-color: @pink;
+  color: @basic-white;
+}
+
 .table-price__type--hit::after{
    content: "Хит";
-    width: 100px;
-    height: 30px;
+    font-family: 'OpenSans';
+    width: 118px;
+    height: 21px;
     font-size: 14px;
     line-height: 30px;
     position: absolute;
-    top: 0px;
-    left: -33px;
+    top: -3px;
+    left: -36px;
     transform: rotate(-45deg);
     text-align: center;
     text-transform: uppercase;
@@ -96,13 +114,13 @@ visibility: hidden;
   }
 
 .table-price__cell--yes {
-  background-image: url(../img/yes.svg);
+  background-image: url(./img/yes.svg);
   background-repeat: no-repeat;
   background-position: center;
 }
 
 .table-price__cell--no {
-    background-image: url(../img/no.svg);
+    background-image: url(./img/no.svg);
   background-repeat: no-repeat;
   background-position: center;
 }

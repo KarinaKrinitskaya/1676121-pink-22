@@ -7,6 +7,7 @@
 
  @media (min-width:  @desktop-width){
   background-color: @light-gray;
+  height: 478px;
   }
 }
 
@@ -22,7 +23,7 @@
 
 .research__container::before {
  @media (min-width: @tablet-width){
-  background: url(../img/timer.svg) no-repeat center;
+  background: url(./img/timer.svg) no-repeat center;
   background-size: cover;
   content: "";
   width: 238px;
@@ -41,8 +42,8 @@
   content: "";
   width: 298px;
   height: 345px;
-  margin-top: -60px;
-  margin-left:4px;
+  margin-top: -61px;
+  margin-left: 1px;
   @media (min-resolution: 2dppx) {
       background: url(../img/timer@2x.svg) no-repeat center;
       background-size: 100%;
@@ -72,10 +73,18 @@
 
  @media (min-width:  @desktop-width){
   width: auto;
+  width: auto;
+  font-size: 31px;
+  position: relative;
+  left: -2px;
+  top: 6px;
+  font-family: 'OpenSans';
+  letter-spacing: -0.5px;
   }
 }
 
 .research__text {
+  font-family: 'OpenSans';
   font-size: 14px;
   line-height: 24px;
   margin-top: 24px;
@@ -86,10 +95,14 @@
  @media (min-width:  @desktop-width){
   font-size: 18px;
   line-height: 30px;
+  margin-top: 29px;
+  margin-left: -1px;
+  width: 560px;
   }
 }
 
 .research__link {
+  font-family: 'OpenSans';
   font-size: 14px;
   line-height: 24px;
   color: @pink;
@@ -98,5 +111,8 @@
  @media (min-width:  @desktop-width){
   font-size: 18px;
   line-height: 30px;
+  margin-top: 31px;
+  margin-left: -1px;
+  display: block;
   }
 }

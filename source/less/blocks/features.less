@@ -1,5 +1,5 @@
 .features {
-  background-image: url(../img/grey-background-mobile.png);
+  background-image: url(./img/grey-background-mobile.png);
   background-position:  top center;
   background-color:  @light-gray;
   background-size: 100% auto;
@@ -8,17 +8,18 @@
 }
 
 .features__title {
+  font-family: 'OpenSans';
   margin: 0;
   padding: 0;
   font-size: 18px;
   line-height: 24px;
 
- @media (min-width: @desktop-width) {
-  font-size: 30px;
-  line-height: 30px;
-  margin-top: 60px;
-  max-width: 223px;
-  margin: 23px auto;
+  @media (min-width: @desktop-width) {
+    font-size: 30px;
+    line-height: 30px;
+    margin-top: 60px;
+    max-width: 223px;
+    margin: 23px auto;
   }
 }
 
@@ -83,7 +84,7 @@
   }
 
  @media (min-width: @desktop-width){
-  background: url(../img/phone-gray.png) no-repeat top center;
+  background: url(./img/phone-gray.png) no-repeat top center;
   content: "";
   position: absolute;
   margin: auto;
@@ -114,13 +115,13 @@
   }
 
  @media (min-width: @desktop-width){
-  background: url(../img/phone-pink.png) no-repeat top center;
+  background: url(./img/phone-pink.png) no-repeat top center;
   content: "";
   position: absolute;
   margin: auto;
   top: auto;
   bottom: 259px;
-  left: -9px;
+  left: 0px;
   right: 0;
   width: 189px;
   height: 280px;
@@ -178,7 +179,7 @@
   margin: auto;
   top: auto;
   bottom: 260px;
-  left: 0;
+  left: 11px;
   right: 0;
   width: 189px;
   height: 300px;
@@ -189,13 +190,32 @@
   }
 }
 
+.features__item:nth-child(1) .features__text {
+  position: relative;
+  left: -4px;
+  bottom: 3px;
+}
+
+.features__item:nth-child(2) .features__text {
+  position: relative;
+  left: 0px;
+  bottom: 3px;
+}
+
+.features__item:nth-child(3) .features__text {
+  position: relative;
+  left: 4px;
+  bottom: 2px;
+}
+
 .features__text {
+  font-family: 'OpenSans';
   padding-top: 10px;
 
- @media (min-width: @desktop-width){
-  font-size: 18px;
-  line-height: 30px;
-  padding: 0 34px;
+  @media (min-width: @desktop-width){
+    font-size: 18px;
+    line-height: 30px;
+    padding: 0 34px;
   }
 }
 

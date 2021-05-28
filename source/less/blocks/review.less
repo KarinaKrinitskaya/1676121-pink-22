@@ -48,7 +48,7 @@
   position: absolute;
     display: block;
     margin-top: -66px;
-    left: 13px;
+    left: 0px;
     width: 28px;
     height: 42px;
     top: 50%;
@@ -56,7 +56,7 @@
     border: none;
     outline: none;
     cursor: pointer;
-    background-image: url(../img/left-arrow.svg);
+    background-image: url(./img/left-arrow.svg);
     background-repeat: no-repeat;
   }
 }
@@ -73,8 +73,8 @@
     border: none;
     outline: none;
     cursor: pointer;
-    right: -20px;
-    background-image: url(../img/right-arrow.svg);
+    right: -6px;
+    background-image: url(./img/right-arrow.svg);
     background-repeat: no-repeat;
 }
 }
@@ -112,6 +112,7 @@
 }
 
 .review__name {
+  font-family: 'OpenSans';
   font-size: 18px;
   line-height: 30px;
   font-style: normal;
@@ -122,17 +123,20 @@
    @media (min-width: @tablet-width) {
   font-size: 24px;
   order: 2;
-  margin-top: 40px;
+  margin-top: 37px;
 }
 }
 .review__detail {
   margin: 0;
   padding: 0;
+  font-family: 'OpenSans';
+  margin-top: 2px;
    @media (min-width: @tablet-width) {
   order: 3;
 }
 }
  .review__text {
+  font-family: 'OpenSans';
   margin: 0;
   padding: 0;
   margin: 0 20px;
@@ -141,14 +145,14 @@
   color: @desaturated-blue;
   @media (min-width: @tablet-width) {
   font-size: 18px;
-line-height: 30px;
-order: 1;
+  line-height: 30px;
+  order: 1;
   }
  }
 
 .review__info {
   @media (min-width: @tablet-width) {
-display: flex;
-flex-direction: column;
+  display: flex;
+  flex-direction: column;
   }
 }
