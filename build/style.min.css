@@ -249,8 +249,6 @@ ul {
   list-style: none;
   align-items: center;
   width: 100%;
-  margin-left: 174px;
-  margin-bottom: 18px;
 }
 @media (min-width: 1200px) {
   .main-nav__list {
@@ -326,7 +324,7 @@ ul {
   .main-nav__list__item {
     position: relative;
     bottom: 3px;
-    margin-right: 77px;
+    margin-left: 77px;
   }
 }
 .page-main {
@@ -454,8 +452,8 @@ ul {
   position: absolute;
   margin: auto;
   top: auto;
-  bottom: 300px;
-  left: 0;
+  bottom: 247px;
+  left: 30px;
   right: 0;
   height: 645px;
 }
@@ -534,6 +532,7 @@ ul {
   margin-bottom: 347px;
   width: 280px;
   padding-left: 20px;
+  position: relative;
 }
 @media (min-width: 660px) {
   .download__title {

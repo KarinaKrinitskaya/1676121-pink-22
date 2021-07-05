@@ -3,7 +3,7 @@
 
   @media (min-width: @desktop-width) {
     padding-top: 57px;
-   padding-left: 80px;
+    padding-left: 80px;
     padding-right: 90px;
     padding-bottom: 57px;
   }
@@ -12,89 +12,90 @@
 .upload {
    background-color: @light-gray;
 
-
-   @media (min-width: @desktop-width) {
-  padding: 0;
-  background-color: @basic-white;
-  margin-bottom: 66px;
+  @media (min-width: @desktop-width) {
+    padding: 0;
+    background-color: @basic-white;
+    margin-bottom: 66px;
   }
 }
 
-.upload__content{
+.upload__content {
+
   @media (min-width: @tablet-width) {
-display: grid;
-grid-template-columns: 300px 260px;
-column-gap: 90px;
-padding: 20px 50px 0 60px;
-background-color: @light-gray;
-
-
-
+    display: grid;
+    grid-template-columns: 300px 260px;
+    column-gap: 90px;
+    padding: 20px 50px 0 60px;
+    background-color: @light-gray;
   }
 
   @media (min-width: @desktop-width) {
-display: grid;
-grid-template-columns: 300px 410px;
+    display: grid;
+    grid-template-columns: 300px 410px;
   }
 }
-.ubload__img{
+
+.ubload__img {
   padding: 20px 0 42px;
 }
 
-.ubload__img img{
+.ubload__img img {
   width: 100%;
 }
-.upload__tools{
+
+.upload__tools {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  @media (min-width: @tablet-width) {
 
+  @media (min-width: @tablet-width) {
   }
-@media (min-width: @desktop-width) {
-      width: 410px;
+
+  @media (min-width: @desktop-width) {
+    width: 410px;
     padding: 46px 0 57px;
     justify-content: space-between;
   }
 }
-.upload__list-block{
+
+.upload__list-block {
   border-bottom: 2px solid @borders-color;
+
   @media (min-width: @tablet-width) {
     border-bottom: none;
   }
 }
 
 .upload__list {
-position: relative;
-    display: flex;
-    width: 240px;
-    margin: 0 auto;
-    padding-bottom: 75px;
-    justify-content: space-between;
-    flex-wrap: wrap;
-    align-items: center;
+  position: relative;
+  display: flex;
+  width: 240px;
+  margin: 0 auto;
+  padding-bottom: 75px;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  align-items: center;
 
   @media (min-width: @tablet-width) {
-  width: 100%;
-    padding-bottom: 0;
-    justify-content: space-between;
-    border-bottom: none;
-    display: block;
+   width: 100%;
+   padding-bottom: 0;
+   justify-content: space-between;
+   border-bottom: none;
+   display: block;
 
   }
 
   @media (min-width: @desktop-width) {
-display: block;
+   display: block;
   }
 }
-.upload__svg{
+.upload__svg {
   width: 48px;
   height: 44px;
 
-    @media (min-width: @tablet-width) {
-  width: 24px;
-  height: 22px;
-
+  @media (min-width: @tablet-width) {
+    width: 24px;
+    height: 22px;
 
   }
 
@@ -105,37 +106,38 @@ display: block;
 }
 
 .upload__bar {
-position: absolute;
-    margin: auto;
-    top: auto;
-    bottom: 34px;
-    left: 0;
-    right: 0;
-    content: none;
-    display: block;
+  position: absolute;
+  margin: auto;
+  top: auto;
+  bottom: 34px;
+  left: 0;
+  right: 0;
+  content: none;
+  display: block;
   background-color: @desaturated-blue;
 
 @media (min-width: @tablet-width) {
-    display: block;
-    position: relative;
-    margin: 0;
-    bottom: 0;
+  display: block;
+  position: relative;
+  margin: 0;
+  bottom: 0;
   }
 
   @media (min-width: @desktop-width) {
-      margin-right: 30px;
+  margin-right: 30px;
   }
 
 }
 
 .upload__bar-bar {
   width: 240px;
-    height: 2px;
-    margin: 0 auto;
-    background: @desaturated-blue;
-     @media (min-width: @tablet-width) {
-      display: block;
-    width: 202px;
+  height: 2px;
+  margin: 0 auto;
+  background: @desaturated-blue;
+
+  @media (min-width: @tablet-width) {
+  display: block;
+  width: 202px;
   }
 
   @media (min-width: @desktop-width) {
@@ -218,11 +220,11 @@ position: absolute;
 
 
 @media (min-width: @tablet-width) {
-  margin-bottom: 24px;
+   margin-bottom: 24px;
   }
 
   @media (min-width: @desktop-width) {
-    width: 183px;;
+   width: 183px;;
 
   }
 }
@@ -257,8 +259,8 @@ position: absolute;
 }
 
 .upload__btn--post:active {
-    background-color: @pink;
-    opacity: 2;
+  background-color: @pink;
+  opacity: 2;
 }
 
 .upload__btn--cancel {
